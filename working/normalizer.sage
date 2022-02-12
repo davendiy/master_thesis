@@ -6,6 +6,7 @@ from itertools import permutations
 a = b = c = d = ...
 
 
+# noinspection PyShadowingNames
 def normalize_expressions(exps, allowed=None):
     """Replace all variables except allowed (default: a b c d) with {x0,x1,x2,x3...}"""
     extra_args = set()
@@ -14,7 +15,6 @@ def normalize_expressions(exps, allowed=None):
         allowed = var('a b c d')
 
     for exp in exps:
-        print(exp)
         extra_args |= {el for el in exp.args() if el not in allowed}
 
     res = []
@@ -29,6 +29,7 @@ def prepare_gap_env():
     gap('LoadPackage("Cryst");;Read("./el2word.g")')
 
 
+# noinspection PyShadowingNames
 def el2word(G, el, verbose=False):
     """Represent, given an element of a finite group G,
     as the word over generators."""
@@ -51,6 +52,7 @@ def el2word(G, el, verbose=False):
     return str(res).split("*"), gens_dict
 
 
+# noinspection PyShadowingNames
 def extend_permutation(G, el, gens, perm):
     """Extend given permutation on generators onto the entire group."""
     word, trans = el2word(G, el)
@@ -75,6 +77,7 @@ def extend_permutation(G, el, gens, perm):
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 
+# noinspection PyShadowingNames
 def create_symbolic_matrix(dim, use_alphabet=False):
     if use_alphabet and dim * dim > len(alphabet):
         raise ValueError(f"Can't use alphabet for matrix {dim}x{dim} due to lack of letters.")
@@ -90,11 +93,12 @@ def create_symbolic_matrix(dim, use_alphabet=False):
             args.append(row[-1])
         A.append(row)
     A = matrix(A)
-    return A, set(args)
+    return A, args
 
 
-def normalizers(n, verbose=False):
-    G = gap(f'SpaceGroupIT(2, {n})')
+# noinspection PyShadowingNames
+def normalizers(n, dim=2, use_alphabet=False, verbose=False, normalize_exp=True):
+    G = gap(f'SpaceGroupIT({dim}, {n})')
     S = G.PointGroup()
     s_elements = [matrix(QQ, el) for el in S.AsList()]
 
@@ -106,10 +110,7 @@ def normalizers(n, verbose=False):
         print(*s_elements, sep='\n')
         print('\n----------------normalizers-------------------------')
 
-    var('a, b, c, d')
-    A = matrix([[a, b], [c, d]])
-
-    conditions = []
+    A, args = create_symbolic_matrix(dim, use_alphabet=use_alphabet)
     found_solutions = set()
     for perm in permutations(range(len(s_elements))):
 
@@ -130,15 +131,60 @@ def normalizers(n, verbose=False):
                 cond_perm = cond_perm.union(set(el))
 
         eq = [cond == 0 for cond in cond_perm]
-        for res in solve(eq, a, b, c, d):
+        for res in solve(eq, *args):
             if not res:
                 if verbose: print(res)
                 continue
-
-            res = normalize_expressions(res)
+            res = tuple(res)
+            if normalize_exp:
+                res = normalize_expressions(res)
             if res not in found_solutions and verbose:
                 print(res)
 
             found_solutions.add(res)
 
     return found_solutions
+
+
+# noinspection PyShadowingNames
+def normalizers_v2(n, dim=2, verbose=False, use_alphabet=False, normalize_exp=True):
+    G = gap(f'SpaceGroupIT({dim}, {n})')
+    S = G.PointGroup()
+    s_elements = S.AsList()
+    gens = list(S.GeneratorsOfGroup())
+
+    if verbose:
+        print('\n====================================================')
+        print(n, 'point group:', S)
+
+        print('group elements:')
+        print(*s_elements, sep='\n')
+        print('\n----------------normalizers-------------------------')
+
+    A, args = create_symbolic_matrix(dim, use_alphabet=use_alphabet)
+    found_solutions = set()
+    for perm in permutations(range(len(gens))):
+
+        # build conditions AX = YA for every X -> Y due to chosen permutation
+        cond_perm = set()
+        for X in s_elements:
+            Y = extend_permutation(S, X, gens, perm)
+
+            X, Y = matrix(QQ, X), matrix(QQ, Y)
+            cond_i = A * X - Y * A
+            for el in cond_i:
+                cond_perm = cond_perm.union(set(el))
+
+        eq = [cond == 0 for cond in cond_perm]
+        for res in solve(eq, *args):
+            if not res:
+                if verbose: print(res)
+                continue
+
+            res = tuple(res)
+            if normalize_exp:
+                res = normalize_expressions(res, allowed=args)
+            if res not in found_solutions and verbose:
+                print(res)
+
+            found_solutions.add(res)
