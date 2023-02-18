@@ -12,10 +12,13 @@
 # end;;
 
 
+
+
+
 ElementAsWordGeneratorsPointGroup := function(S, g, F)
   local gen, hom;
-  gen := GeneratorsOfGroup(S);
-  hom := GroupHomomorphismByImages(F,S, GeneratorsOfGroup(F), GeneratorsOfGroup(S));
+  gen := MinimalGeneratingSet(S);
+  hom := GroupHomomorphismByImages(F,S, MinimalGeneratingSet(F), MinimalGeneratingSet(S));
   if g in S then return PreImagesRepresentative(hom, g);
   else Print("Element not in the group"); return false; fi;
 end;;
@@ -31,8 +34,8 @@ ElementAsWordGenerators:=function(G,g)
     return false;
   fi;
 
-  gen := GeneratorsOfGroup(G);
-  S := PointGroup(G); genS := GeneratorsOfGroup(S);
+  gen := MinimalGeneratingSet(G);
+  S := PointGroup(G); genS := MinimalGeneratingSet(S);
   if Size(genS) = 0 then
     n1 := g[3][1];
     n2 := g[3][2];
