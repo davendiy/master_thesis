@@ -87,13 +87,20 @@ alphabet = 'abcdefghijklmnopqrstuvwxyz'
 def create_symbolic_matrix(dim, use_alphabet=False):
     """Create symbolic matrix of given dimention.
 
-    :param dim: integer
-    :param use_alphabet: if True, then symbolic matrices are created like
-                                [a, b]
-                                [c, d]
-                         if False, then
-                                [a_00, a_01]
-                                [a_10, a_11]
+    Parameters
+    ----------
+    dim : integer
+    use_alphabet
+        if True, then symbolic matrices are created like
+                        [a, b]
+                        [c, d]
+        if False, then
+                    [a_00, a_01]
+                    [a_10, a_11]
+
+    Returns
+    -------
+    Symbolic matrix
     """
     if use_alphabet and dim * dim > len(alphabet):
         raise ValueError(f"Can't use alphabet for matrix {dim}x{dim} due to lack of letters.")
@@ -133,7 +140,7 @@ def sol2matrix(solution, dim=2, use_alphabet=False):
 
 
 # noinspection PyShadowingNames
-def normalizers(n, dim=2, use_alphabet=False, verbose=False, normalize_exp=True,
+def normalizers_old(n, dim=2, use_alphabet=False, verbose=False, normalize_exp=True,
                 to_matrix=True, ignore_trivial=True):
     """Find normalizer of the PointGroup in GL(n, QQ).
 
@@ -145,23 +152,37 @@ def normalizers(n, dim=2, use_alphabet=False, verbose=False, normalize_exp=True,
     of linear equations.
 
     Baseline version, slow.
-    ----------------------------------------------------------------------------
-    :param n: index of the Crystallographic group in the Gap CrystCat package
-    :param dim: dimension of crystallographic group
-    :param use_alphabet: if True, then symbolic matrices are created like
+
+    Parameters
+    ----------
+    n : int
+        index of the Crystallographic group in the Gap CrystCat package
+    dim : int
+        dimension of crystallographic group
+    use_alphabet : bool
+        if True, then symbolic matrices are created like
                                 [a, b]
                                 [c, d]
-                         if False, then
-                                [a_00, a_01]
-                                [a_10, a_11]
-    :param normalize_exp: if True, then solution of the linear system will be
-                          normalized, i.e. all the independed variables will be
-                          renamed into x_0, x_1, x_2 ...
-    :param to_matrix: if True, then the result solutions will be transformed
-                      into symbolic matrices instead of tuple of Expressions
-    :param verbose: True to see the results on the fly.
-    :param ignore_trivial: if True then solutions with zero determinant will be
-                           ignored
+        if False, then
+                            [a_00, a_01]
+                            [a_10, a_11]
+    normalize_exp : bool
+        if True, then solution of the linear system will be
+        normalized, i.e. all the independed variables will be
+        renamed into x_0, x_1, x_2 ...
+    to_matrix : bool
+        if True, then the result solutions will be transformed
+        into symbolic matrices instead of tuple of Expressions
+    verbose : bool
+        True to see the results on the fly.
+    ignore_trivial : bool
+        if True then solutions with zero determinant will be ignored
+
+    Returns
+    -------
+    If `to_matrix` is True, then list of symbolic matrices is returned.
+    Else, list of tuples of expressions like "a_00 == x1" which denotes
+         what elements of matrix should be
     """
 
     G = gap(f'SpaceGroupIT({dim}, {n})')
@@ -269,7 +290,7 @@ def get_point_group_gens(cryst_num, dim=3):
 #   Make tests for all the parameters
 #   refactor maybe
 # noinspection PyShadowingNames
-def normalizers_v2(n, dim=2, verbose=False, use_alphabet=False,
+def normalizers(n, dim=2, verbose=False, use_alphabet=False,
                    normalize_exp=True, to_matrix=True, ignore_trivial=True):
     """Find normalizer of the PointGroup in GL(n, QQ).
 
@@ -282,23 +303,37 @@ def normalizers_v2(n, dim=2, verbose=False, use_alphabet=False,
 
     Second version, fast. Exploits the fact, that instead of full permutation of
     A we can just declare where to map generators of A.
-    ----------------------------------------------------------------------------
-    :param n: index of the Crystallographic group in the Gap CrystCat package
-    :param dim: dimension of crystallographic group
-    :param use_alphabet: if True, then symbolic matrices are created like
+
+    Parameters
+    ----------
+    n : int
+        index of the Crystallographic group in the Gap CrystCat package
+    dim : int
+        dimension of crystallographic group
+    use_alphabet : bool
+        if True, then symbolic matrices are created like
                                 [a, b]
                                 [c, d]
-                         if False, then
-                                [a_00, a_01]
-                                [a_10, a_11]
-    :param normalize_exp: if True, then solution of the linear system will be
-                          normalized, i.e. all the independed variables will be
-                          renamed into x_0, x_1, x_2 ...
-    :param to_matrix: if True, then the result solutions will be transformed
-                      into symbolic matrices instead of tuple of Expressions
-    :param verbose: True to see the results on the fly.
-    :param ignore_trivial: if True then solutions with zero determinant will be
-                           ignored
+        if False, then
+                            [a_00, a_01]
+                            [a_10, a_11]
+    normalize_exp : bool
+        if True, then solution of the linear system will be
+        normalized, i.e. all the independed variables will be
+        renamed into x_0, x_1, x_2 ...
+    to_matrix : bool
+        if True, then the result solutions will be transformed
+        into symbolic matrices instead of tuple of Expressions
+    verbose : bool
+        True to see the results on the fly.
+    ignore_trivial : bool
+        if True then solutions with zero determinant will be ignored
+
+    Returns
+    -------
+    If `to_matrix` is True, then list of symbolic matrices is returned.
+    Else, list of tuples of expressions like "a_00 == x1" which denotes
+         what elements of matrix should be
     """
     S = MatrixGroup(get_point_group_gens(n, dim=dim))
     gens = S.gens()
@@ -365,8 +400,22 @@ def normalizers_v2(n, dim=2, verbose=False, use_alphabet=False,
         return found_solutions
 
 
-# check whether matrix is simply factorizable
 def check_div(A):
+    """ Check whether matrix is simply factorizable.
+
+    Exploits the fact that determinant of matrix can be found using
+    row/column decomposition. Thus, if a row/column contains n-1 zero,
+    then the determinant can be found as x * det(A'), where A' is a submatrix.
+
+    Parameters
+    ----------
+    A : symbolic matrix
+
+    Returns
+    -------
+    bool
+        True if determinant is simply factorizable
+    """
     x = var('x')
 
     n = len(list(A))
