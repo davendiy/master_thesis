@@ -403,9 +403,10 @@ def normalizers(n, dim=2, verbose=False, use_alphabet=False,
 def check_div(A):
     """ Check whether matrix is simply factorizable.
 
-    Exploits the fact that determinant of matrix can be found using
-    row/column decomposition. Thus, if a row/column contains n-1 zero,
-    then the determinant can be found as x * det(A'), where A' is a submatrix.
+    Exploits the fact that determinant of (A - xE) matrix (i.e. characteristic polynomial)
+    can be found using row/column decomposition. Thus, if a row/column contains
+    n-1 zero, then the determinant can be found as x * det(A'), where A' is a
+    submatrix.
 
     Parameters
     ----------
@@ -414,7 +415,7 @@ def check_div(A):
     Returns
     -------
     bool
-        True if determinant is simply factorizable
+        True if characteristic polynomial is simply factorizable
     """
     x = var('x')
 

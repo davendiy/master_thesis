@@ -1,0 +1,3616 @@
+-------------------------------------------------------
+Crystallographic group #0
+affine transformations for isomorphic subgroups:
+-------------------------------------------------------
+Crystallographic group #1
+affine transformations for isomorphic subgroups:
+[ p  q  r  0  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,  0 <= q < p ,  0 <= r < p
+[ 1  0  0  0  ]
+[ 0  p  q  0  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,  0 <= q < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+-------------------------------------------------------
+Crystallographic group #2
+affine transformations for isomorphic subgroups:
+[ p  q  r  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= r < p ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  q  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #3
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ -q  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #4
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ -q  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #5
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ -2q  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #6
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ -q  0  p  0  ]
+
+Conditions: p prime ,  0 <= q < p
+[ p  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime
+-------------------------------------------------------
+Crystallographic group #7
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  -2q  0  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,  0 <= q < p
+-------------------------------------------------------
+Crystallographic group #8
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ -2q  0  p  0  ]
+
+Conditions: p prime ,  0 <= q < p
+[ p  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #9
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ -2q  0  p  0  ]
+
+Conditions: prime p > 2 ,  0 <= q < p
+[ p  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #10
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ -q  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #11
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ -q  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #12
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ -2q  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #13
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  -2q  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #14
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  -2q  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #15
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ -2q  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= q < p ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #16
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #17
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #18
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #19
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #20
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #21
+affine transformations for isomorphic subgroups:
+
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #22
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #23
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #24
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #25
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+-------------------------------------------------------
+Crystallographic group #26
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #27
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #28
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+-------------------------------------------------------
+Crystallographic group #29
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #30
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #31
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #32
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+-------------------------------------------------------
+Crystallographic group #33
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #34
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #35
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+-------------------------------------------------------
+Crystallographic group #36
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #37
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #38
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #39
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #40
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #41
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #42
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #43
+affine transformations for isomorphic subgroups:
+
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ p  0  0  1/4+u  ]
+[ 0  1  0  1/4  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ 1  0  0  1/4  ]
+[ 0  p  0  1/4+u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 4 ,  p=4n+1
+[ 1  0  0  1/4  ]
+[ 0  1  0  1/4  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2 ,  p=4n-1
+-------------------------------------------------------
+Crystallographic group #44
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #45
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #46
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+-------------------------------------------------------
+Crystallographic group #47
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #48
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #49
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #50
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #51
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #52
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #53
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #54
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #55
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #56
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #57
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #58
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #59
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #60
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #61
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #62
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #63
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #64
+affine transformations for isomorphic subgroups:
+
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #65
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #66
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #67
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #68
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #69
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #70
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  1  0  1/4  ]
+[ 0  0  1  1/4  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ 1  0  0  1/4  ]
+[ 0  p  0  u  ]
+[ 0  0  1  1/4  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ 1  0  0  1/4  ]
+[ 0  1  0  1/4  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #71
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #72
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #73
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #74
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  1  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  p  0  u  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #75
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #76
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 4 ,  p=4n+1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2 ,  p=4n-1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #77
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #78
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 4 ,  p=4n+1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2 ,  p=4n-1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #79
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #80
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 4 ,  p=4n+1
+[ 1  0  0  1/2  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2 ,  p=4n-1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 1 ,  q odd ,  r even ,  0 <= u < p
+[ q  r  0  1/2+u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 1 ,  r > 0 ,  q even ,  r odd ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #81
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #82
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #83
+affine transformations for isomorphic subgroups:
+
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #84
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #85
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=4n+1 ,  q > 0 ,  q odd ,  r > 1 ,  r even ,  0 <= u < p
+[ q  r  0  1/2+u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=4n+1 ,  q > 1 ,  q even ,  r > 0 ,  r odd ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #86
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=4n+1 ,  q > 0 ,  q odd ,  r > 1 ,  r even ,  0 <= u < p
+[ q  r  0  1/2+u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=4n+1 ,  q > 1 ,  q even ,  r > 0 ,  r odd ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #87
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #88
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ 1  0  0  1/2  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ p  0  0  1/2+u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=4n+1, p > 12  ,  0 <= u < p ,  q > 0 ,  r=2n' ,  q+r=4n''+1
+[ q  r  0  1/2+u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=4n+1, p > 4  ,  0 <= u < p ,  q > 0 ,  r=2n' ,  q+r=4n''-1
+[ q  r  0  1/4+u  ]
+[ -r  q  0  1/4  ]
+[ 0  0  1  1/4  ]
+
+Conditions: prime p=4n+1, p > 12  ,  0 <= u < p ,  q=2n' ,  r > 0 ,  q+r=4n''+1
+[ q  r  0  3/4+u  ]
+[ -r  q  0  1/4  ]
+[ 0  0  1  1/4  ]
+
+Conditions: prime p=4n+1, p > 4  ,  0 <= u < p ,  q=2n' ,  r > 0 ,  q+r=4n''-1
+-------------------------------------------------------
+Crystallographic group #89
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #90
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #91
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #92
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #93
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #94
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #95
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #96
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #97
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #98
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ 1  0  0  1/2  ]
+[ 0  1  0  0  ]
+[ 0  0  p  1/4+u  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #99
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #100
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #101
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #102
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #103
+affine transformations for isomorphic subgroups:
+
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #104
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #105
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #106
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #107
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #108
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #109
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 4 ,  p=4n+1
+[ 1  0  0  1/2  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2 ,  p=4n-1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #110
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 4 ,  p=4n+1
+[ 1  0  0  1/2  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2 ,  p=4n-1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #111
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #112
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #113
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #114
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #115
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #116
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #117
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #118
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #119
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #120
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #121
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #122
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ 1  0  0  1/2  ]
+[ 0  1  0  0  ]
+[ 0  0  p  1/4+u  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #123
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #124
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #125
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #126
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #127
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #128
+affine transformations for isomorphic subgroups:
+
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #129
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #130
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #131
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #132
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #133
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #134
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #135
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #136
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #137
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #138
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #139
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #140
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #141
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ 1  0  0  1/2  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p ,  0 <= v < p
+[ p  0  0  1/2+u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #142
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p
+[ 1  0  0  1/2  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p ,  0 <= v < p
+[ p  0  0  1/2+u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #143
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #144
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime ,  p=2 or p=6n-1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p=6n+1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,  p=2 or p=6n-1 ,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 6 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #145
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p=6n+1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime ,  p=2 or p=6n-1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,  p=2 or p=6n-1 ,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #146
+affine transformations for isomorphic subgroups:
+[ 0  1  0  0  ]
+[ -1  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime ,  p=2 or p=6n-1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p=6n+1
+[ 0  p  0  u  ]
+[ -p  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q-r  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=6n+1 ,  q > 0 ,  r > 0 ,  q &ne; r ,  q+r=3n'+1 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #147
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=3 or p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #148
+affine transformations for isomorphic subgroups:
+[ 0  1  0  0  ]
+[ -1  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ 0  p  0  u  ]
+[ -p  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,  p=2 or p=6n-1 ,  0 <= u < p ,  0 <= v < p
+[ q-r  r  0  u  ]
+[ -r  q  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=6n+1 ,  q > 0 ,  r > 0 ,  q &ne; r ,  q+r=3n'+1 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #149
+affine transformations for isomorphic subgroups:
+
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #150
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #151
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #152
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #153
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #154
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #155
+affine transformations for isomorphic subgroups:
+[ 0  1  0  0  ]
+[ -1  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ 0  p  0  u  ]
+[ -p  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #156
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #157
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #158
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #159
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #160
+affine transformations for isomorphic subgroups:
+[ 0  1  0  0  ]
+[ -1  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime ,  p=2 or p=6n-1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 6 ,  p=6n+1
+[ 0  p  0  u  ]
+[ -p  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #161
+affine transformations for isomorphic subgroups:
+[ 0  1  0  0  ]
+[ -1  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 4 ,  p=6n-1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 6 ,  p=6n+1
+[ 0  p  0  u  ]
+[ -p  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #162
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #163
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #164
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #165
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #166
+affine transformations for isomorphic subgroups:
+[ 0  1  0  0  ]
+[ -1  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ 0  p  0  u  ]
+[ -p  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #167
+affine transformations for isomorphic subgroups:
+[ 0  1  0  0  ]
+[ -1  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ 0  p  0  u  ]
+[ -p  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #168
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=3 or p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #169
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 4 ,  p=6n-1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 6 ,  p=6n+1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=3 or p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #170
+affine transformations for isomorphic subgroups:
+
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 6 ,  p=6n+1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 4 ,  p=6n-1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=3 or p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #171
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p=2 or p=6n-1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 6 ,  p=6n+1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=3 or p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #172
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 6 ,  p=6n+1
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p=2 or p=6n-1
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=3 or p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #173
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=3 or p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #174
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p > 6 ,  p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #175
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=3 or p=6n-1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #176
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: p prime ,   p=2 or p=6n-1,  0 <= u < p ,  0 <= v < p
+[ q  r  0  u  ]
+[ -r  q+r  0  0  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p=3 or p=6n+1 ,  q > 0 ,  r > 0 ,  0 <= u < p
+-------------------------------------------------------
+Crystallographic group #177
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #178
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #179
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #180
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #181
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 6 ,   p=6n+1,  0 <= u < p
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 4 ,   p=6n-1,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #182
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #183
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: p prime
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #184
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #185
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #186
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  0  ]
+
+Conditions: prime p > 2
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #187
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #188
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #189
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #190
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #191
+affine transformations for isomorphic subgroups:
+
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #192
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #193
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #194
+affine transformations for isomorphic subgroups:
+[ 1  0  0  0  ]
+[ 0  1  0  0  ]
+[ 0  0  p  u  ]
+
+Conditions: prime p > 2 ,  0 <= u < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  1  0  ]
+
+Conditions: prime p &ne; 3 ,  0 <= u < p ,  0 <= v < p
+-------------------------------------------------------
+Crystallographic group #195
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #196
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #197
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #198
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #199
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #200
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #201
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #202
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #203
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #204
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #205
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #206
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #207
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #208
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #209
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #210
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+[ p  0  0  1/4+u  ]
+[ 0  p  0  1/4+v  ]
+[ 0  0  p  1/4+w  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #211
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #212
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #213
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 4 ,   p=4n+1,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,   p=4n-1,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #214
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #215
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #216
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #217
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #218
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #219
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #220
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #221
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #222
+affine transformations for isomorphic subgroups:
+
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #223
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #224
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #225
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #226
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #227
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #228
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+-------------------------------------------------------
+Crystallographic group #229
+affine transformations for isomorphic subgroups:
+[ p  0  0  u  ]
+[ 0  p  0  v  ]
+[ 0  0  p  w  ]
+
+Conditions: prime p > 2 ,  0 <= u < p ,  0 <= v < p ,  0 <= w < p
+
