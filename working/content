@@ -1,0 +1,77 @@
+(base) olga@007morf:~/Projects/Chamaeleon/qaqc2/data_qa_qc$ git branch
+* main
+(base) olga@007morf:~/Projects/Chamaeleon/qaqc2/data_qa_qc$ git checkout -b change_dates
+Switched to a new branch 'change_dates'
+(base) olga@007morf:~/Projects/Chamaeleon/qaqc2/data_qa_qc$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) olga@007morf:~/Projects/Chamaeleon/qaqc2/data_qa_qc$ git checkout -b pitchbook
+Switched to a new branch 'pitchbook'
+(base) olga@007morf:~/Projects/Chamaeleon/qaqc2/data_qa_qc$ git pull origin pitchbook
+From gitlab.com:chamaeleon-data-engineering/data_qa_qc
+ * branch            pitchbook  -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+(base) olga@007morf:~/Projects/Chamaeleon/qaqc2/data_qa_qc$ git config pull.rebase true   
+(base) olga@007morf:~/Projects/Chamaeleon/qaqc2/data_qa_qc$ git pull origin pitchbook
+From gitlab.com:chamaeleon-data-engineering/data_qa_qc
+ * branch            pitchbook  -> FETCH_HEAD
+Auto-merging src/cloud_functions/refresh_metrics/main.py
+CONFLICT (content): Merge conflict in src/cloud_functions/refresh_metrics/main.py
+error: could not apply 7b457dd... finalized appannie metrics
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 7b457dd... finalized appannie metrics
+(base) olga@007morf:~/Projects/Chamaeleon/qaqc2/data_qa_qc$ git branch
+* (no branch, rebasing pitchbook)
+  change_dates
+  main
+  pitchbook
+(base) olga@007morf:~/Projects/Chamaeleon/qaqc2/data_qa_qc$ git checkout change_dates
+src/cloud_functions/refresh_metrics/main.py: needs merge
+error: you need to resolve your current index first
+(base) olga@007morf:~/Projects/Chamaeleon/qaqc2/data_qa_qc$ git status
+interactive rebase in progress; onto bed8b4e
+Last command done (1 command done):
+   pick 7b457dd finalized appannie metrics
+Next commands to do (2 remaining commands):
+   pick db0950b finalized predict leads metrics
+   pick 232e29a finalized appannie metrics
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'pitchbook' on 'bed8b4e'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/cloud_functions/refresh_metrics/metric_groups/scraping_appannie/__init__.py
+        new file:   src/cloud_functions/refresh_metrics/metric_groups/scraping_appannie/calculations.py
+        new file:   src/cloud_functions/refresh_metrics/metric_groups/scraping_appannie/metrics.py
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   src/cloud_functions/refresh_metrics/main.py
+
+
+git reflog
+232e29a (HEAD -> pitchbook, origin/main, origin/HEAD, main) HEAD@{2}: checkout: moving from main to pitchbook
+232e29a (HEAD -> pitchbook, origin/main, origin/HEAD, main) HEAD@{3}: checkout: moving from change_dates to main
+0aecbf4 (origin/change_dates, change_dates) HEAD@{4}: commit: finalized gtrends
+b9ee327 HEAD@{5}: commit: finalized dealroom
+232e29a (HEAD -> pitchbook, origin/main, origin/HEAD, main) HEAD@{6}: checkout: moving from main to change_dates
+232e29a (HEAD -> pitchbook, origin/main, origin/HEAD, main) HEAD@{7}: clone: from gitlab.com:chamaeleon-data-engineering/data_qa_qc.git

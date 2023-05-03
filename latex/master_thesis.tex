@@ -1,0 +1,2457 @@
+\documentclass[a4paper,12pt]{amsart}
+
+\usepackage[T1, T2A]{fontenc}
+
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{relsize}
+\usepackage{graphicx}
+\usepackage{amssymb,stackengine}
+\usepackage{float}
+
+\usepackage[ukrainian, english]{babel}
+
+\usepackage{listings}
+% \usepackage[colorlinks]{hyperref}
+\usepackage{hyperref}
+\usepackage[title]{appendix}
+
+
+% template
+
+\frenchspacing \righthyphenmin=2 \emergencystretch=5pt
+\hfuzz=0.5pt \tolerance=400 \oddsidemargin 5mm \evensidemargin 5mm
+\textwidth 160mm \textheight 230mm
+
+\hoffset=-0.5cm \voffset=-1.0cm
+
+%\renewcommand\baselinestretch{1.1}
+
+
+
+\usepackage{xcolor}
+
+% links
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=cyan,
+}
+
+% coloring of listings
+
+
+\definecolor{codegreen}{rgb}{0,0.7,0}
+\definecolor{codegray}{rgb}{0.4,0.4,0.4}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegray}\textit,
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	%	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=3pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+% path to images
+\graphicspath{ {../graphs/} }
+
+
+\usepackage[left=2.5cm,right=3cm,
+top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+
+\title{ 	Self-similar actions of virtually abelian groups }
+\author{ David Zashkolny }
+\date{March 2023}
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{conjecture}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{problem}{Problem}
+\newtheorem{question}{Question}
+\newtheorem{remark}{Remark}
+\newtheorem{algorithm}{Scheme}
+
+\newcommand{\Dom}{\text{Dom }}
+\newcommand{\Ker}{\text{Ker }}
+\newcommand{\Imag}{\text{Im }}
+\newcommand{\End}{\text{End}}
+\newcommand{\Hom}{\text{Hom}}
+
+\begin{document}
+	
+	
+	
+	\thispagestyle {empty}
+	\begin{center}
+		\large  Київський Національний Університет імені Тараса Шевченка \\
+		Механіко-математичний факультет \\
+		Кафедра алгебри і комп'ютерної математики \par
+	\end{center}
+	
+	\vskip0cm plus 3.5fill
+	Освітній рівень -- магістр	
+	
+	Освітня кваліфікація -- магістр математики 
+	
+	за спеціальністю 111 -- математика 
+	
+	за освітньою програмою -- комп'ютерна математика 
+	
+	
+	\begin{center}
+		\vskip0cm plus 1fill
+		\vspace{2.5cm} {\bf Кваліфікаційна робота}\\
+		
+		{\bf на здобуття ступеня магістра математики}\\
+		%{\bf на тему:}\\
+	\end{center}
+	
+	
+	\vskip0cm plus 1.0fill
+
+	
+	
+	\begin{center}\bf
+		{\LARGE
+			Self-similar actions of virtually abelian groups 
+			\par}
+	\end{center}
+	
+	\vskip0cm plus 1.5fill
+	
+	\hangindent=7cm \hangafter=0 \noindent
+	студента 2-го курсу магістратури\\
+	{\bf Зашкольного Давида Олександровича}\\
+	
+	
+	\vskip0cm plus 1fill
+	
+	Допущений до захисту в ЕК
+	
+	Протокол №11 засідання кафедри 
+	
+	алгебри і комп'ютерної математики 
+	
+	від 25 квітня 2023 року 
+	
+	Завідувач кафедри алгебри і комп'ютерної математики 
+	
+	\begin{center}
+		
+		\vskip0cm plus 1.5fill
+		АНАТОЛІЙ ПЕТРАВЧУК
+	\end{center}
+	
+	
+	\vskip0cm plus 1.5fill
+	\hangindent=7cm \hangafter=0 \noindent
+	Науковий Керівник:\\
+	Доцент кафедри, доктор фiзико-математичних наук\\
+	{\bf Бондаренко Євген Володимирович}
+	
+	
+	
+	\vskip5cm plus 1.5fill
+	\begin{center}
+		КИЇВ --- 2023
+	\end{center}
+	
+	\newpage
+	\pagenumbering{arabic}
+	
+	%\newpage
+	\tableofcontents
+	\listoftables
+	
+	
+	\newpage
+	
+	
+	\section{Introduction}
+	
+	Self-similarity is a fascinating topic that arises in many areas of mathematics.  Self-similar actions of groups are closely related to fractals, which are objects that exhibit self-similarity at different scales. The study of self-similar actions of groups can also be seen as a special case of the theory of dynamical systems, where the group acts on a space and generates a self-similar structure.
+	
+	In this paper, we explore self-similar actions of groups via so-called virtual endomorphisms -- a convenient toolkit, that was highly developed by Nekrashevych. Specifically, we investigate free abelian groups, finitely generated abelian groups, and crystallographic groups. The choice is pretty straightforward since free abelian groups have a simple structure and as a result, they are the first, ones who arise at the very beginning of the studying. The next natural step is to extend the results to the finitely generated abelian groups since the only difference from free abelian is the existence of a finite part, i.e. "torsion". Finally, the great goal of this paper is to explore the self-similarity of crystallographic groups, which are again one step further into the complexity. 
+	
+	Crystallographic groups are crucial in studying crystals and have applications in materials science, physics, and chemistry. They seem to be simple, yet still remain mysterious in a significant number of problems. Usual example is the Klein bottle group $K$ with finite presentation $K=\langle a,b : aba=b\rangle$ which appears almost everywhere. Nevertheless, they are objects of the greatest importance due to their diverse practical applications, and hence are potential candidates for research. 
+	
+	The structure of this thesis is following. 
+	
+	\ref{section: theory} \textit{Theoretical Background and Related work} provides a reader with all the prerequisites needed to understand the main results.  
+		
+	\ref{section: main results} \textit{Main Results} contains all the scientific novelty this paper offers. Every family of groups is being investigated in a separate subsection, following the Scheme:
+	
+	\begin{enumerate}[label=\arabic*.]
+		\item describe every subgroup of finite index $H < G$; 
+		\item describe every homomorphisms $\phi : H \rightarrow G$;
+		\item provide a criterion when $\phi$ is simple to guarantee faithfulness of the result self-similar action;
+		\item (optional) describe conjugacy classes of virtual endomorphisms $\phi: G \dashrightarrow G$;
+		\item (optional) describe subset of surjective virtual endomorphisms to have self-replicating action.
+	\end{enumerate}
+	
+	
+	
+	
+	Namely, 
+	
+	\begin{enumerate}
+		\item for free abelian groups we give a detailed description of virtual endomorphisms, and criteria when they are simple and surjective in the Theorem \ref{theorem: self-similar free abelian}. We explore every virtual endomorphism, in contrast to the \cite{Nekrashevych:virtual_endomorphisms}, where the author's concern is only surjective ones; 
+		
+		\item for finitely generated abelian groups we also provide a characterization of virtual endomorphisms, although not so detailed one we still achieve the following results. Specifically, in the Theorem \ref{theorem: self-similar fintely generated} we prove that the simplicity of the virtual endomorphism of a free abelian group $G = \mathbb{Z}^n \oplus F$ does only depend on the simplicity of its components, which reduces the task to the free abelian case;  
+		
+		\item for crystallographic group virtual endomorphisms are in fact conjugations in the affine group by the Bieberbach theorem. We established a criterion of the existence of self-replicating action for crystallographic groups. Particularly, in Theorem \ref{theorem: cryst criterion} we show that the virtual endomorphism of a crystallographic group is simple if and only if it is simple on pure translations, which is once again reducing the task to the free abelian groups. As a result, we proved that every crystallographic group admits a self-replicating action. 
+	\end{enumerate}
+	\ref{section:experiments} \textit{Computational Experiments} comes up with the results of our algorithmic work for crystallographic groups. Since they have vast practical interest, it's pretty natural to focus on them during the lab work. We introduce our algorithm of generating self-replicating action of crystallographic groups, which is implemented in the mathematical environment \href{https://www.sagemath.org/}{Sagemath}. Using the developed tools we explore wallpaper groups and space groups for self-replicating actions of minimal alphabet, since the aforementioned scalar matrix mostly yields an action with big one. Some results have been attached in the Appendix. All the results along with the code one can found on the GitHub \href{https://github.com/davendiy/master_thesis}{repository}.
+	
+	%TODO: 
+	% - Rewrite proof of the Proposition 6
+	% - Split Proposition 7 into definition and proposition 
+	% - Add theory of System of Non-primitive Translations to the crystallographic section 
+	% - Recheck proof of Theorem 14 item 3
+	% - Remake Corollary 14.1
+	% - Recheck every theorem from the crystallographic section 
+	% - \textbf{ADD SECTION COMPUTATIONAL EXPERIMENTS: }
+		
+	%	\begin{enumerate}
+	%		\item Add description of the problem 
+	%		\item\textbf{ Add algorithm }
+	%	\end{enumerate}
+		
+	%\end{enumerate}
+	
+	
+	\newpage 
+	\section{Theoretical background and related work}\label{section: theory}
+	This section provides a reader, that is assumed to be familiar with basic algebraic structures (in other cases check \cite{Algebra} for instance), with all the definitions needed to understand the main results. In particular, here some concepts will be introduced from the  geometric group theory (more in \cite{GeomAlgebra:Bondarenko}), self-similarity (\cite{Nekrashevych:self-similar}, \cite{Nekrashevych:virtual_endomorphisms} and \cite{Auto}) as well as crystallographic groups (\cite{Cryst_and_math}, \cite{cryst:group_theory}, \cite{cryst:geometry_of_cryst}) .
+	
+	\subsection{Elements of geometric group theory}
+	It is a convenient way to consider groups as geometric objects, by introducing metric or topology for example. Particularly, every group can be considered as a group of symmetries or transformations of some space, on which this group acts. 
+	
+	\begin{definition}
+		A group $G$ is (left) \textit{acting} on a set $X$ if a map $G \times X \rightarrow X, (g, x) \mapsto g(x)$ with following properties is defined: 
+		
+		\begin{enumerate}[label=\arabic*.]
+			\item $(gh)(x) = g(h(x))$ for every $g, h \in G, x \in X$
+			\item $e(x) = x$ for every $x \in X$, where $e$ is a group's identity.
+			
+		\end{enumerate}
+		
+	\end{definition}
+	
+	
+	In other words, action of $G$ on $X$ means a homomorphism from $G$ to $Sym(X)$. 
+
+	Group action is
+	
+	\begin{itemize}
+		\item[-] \textit{transitive} if $X$ is non-empty and for each pair $x,y \in X$ there exists a $g \in G$ such that $g(x) = y$.
+		\item[-] \textit{regular} (or \textit{simply transitive}) if it is transitive and there exists only one $g$ for every pair $x, y$ 
+		\item[-] \textit{faithful} if for every $g \neq e \in G$ there exists $x \in X$ such that $g(x) \neq x$
+		\item[-] \textit{free} if for every $g \neq e \in G, \, g(x) \neq x$ for every $x \in X$ 
+	\end{itemize}
+	
+
+	Faithful action means that the homomorphism $G \rightarrow Sym(X)$ induced by the action \textit{has trivial kernel}. 
+	
+	\begin{proposition}
+		An action is regular iff it is both transitive and free. 
+	\end{proposition}
+	
+	
+	\begin{definition}
+		A group $G$ is said to be \textit{finitely generated} if $G$ has finite set of \textit{generators}, i.e. every element of $G$ can be represented as finite product of elements from the finite set $S \subset G$ and their inverses. 
+		
+		Notation: $G = \langle S \rangle$ 
+	\end{definition}
+	
+	
+	
+	
+	\begin{definition}
+		Let $P$ be some property of a group. A group $G$ is said to be \textit{virtually} $P$ if there is a subgroup of finite index for which the property $P$ holds. 
+		
+	\end{definition}
+	
+	Examples: 
+	
+	\begin{itemize}
+		\item Any finite group is virtually abelian, since a trivial subgroup has a finite index and is obviously abelian. 
+		
+		\item Any group that is virtually abelian is also virtually nilpotent. 
+		
+		\item Any virtually cyclic group is also virtually free. 
+		
+	\end{itemize}
+	
+	
+	\begin{definition}
+		Given two groups $H, N$ and a group homomorphism $\phi : H \rightarrow Aut(N)$, i.e. $H$ acts on $N$. An \textit{outer semidirect product} of $H$ and $N$ with respect to $\phi$ is a new group $G = H \ltimes N$, defined as follows: 
+		
+		\begin{enumerate}[label=\arabic*.]
+			\item The underlying set is the Cartesian product $H \times N$
+			\item The group operation $\cdot$ is determined by the homomorphism $\phi$: 
+			$$
+			(h_1, n_1) \cdot (h_2, n_2) = (h_1 h_2, n_1 h_1(n_2))
+			$$
+			where $h_1 (n_2)$ means $h_1$ acting on $n_2$.
+		\end{enumerate}
+		
+		Example: an affine group $\mathbf{A}(n)$ of invertible affine transformations of euclidean space $\mathbb{R}^n$ is in fact a semidirect product of the general linear group and the $\mathbb{R}^n$: 
+		$$\mathbf{A}(n) = GL(\mathbb{R}, n) \ltimes \mathbb{R}^n$$
+		
+	\end{definition}
+	
+	
+	\begin{definition}
+		Given group $G$ and its subgroup $H$. A \textit{normalizer} of $H$ in $G$ or $\mathcal{N}(H, G)$ is the maximal subgroup $N < G$ such that 
+		$$
+		N = \{g \in G : g^{-1}Hg = H\}.
+		$$
+	\end{definition}
+	
+	\subsection{Self-similar action}
+	
+	Groups which admit self-similar action (and also called self-similar for this reason) are objects of a particular interest in the modern group theory since Grigorchuk's publication with solution to the famous Burnside's problem \cite{Grygorchuk:original}. Later in 1984, he also proved that the group from the original paper has so-called intermediate growth \cite{Grygorchuk:growth}, that is a property strongly connected with Banach-Tarski paradox. We review basic information about self-similar group actions (check \cite{Nekrashevych:self-similar} for more information).
+	
+	
+	Let $X$ be a finite set (alphabet) and $X^{*}$ the set of all words (strings) over $X$, including the empty word $\epsilon$. The set $X^{*}$ with operation concatenation of words is a free monoid generated by $X$. The length of a word $v$ is denoted by $|v|$.
+	
+	
+	\begin{definition}
+		A faithful action of a group $G$ on the set $X^{*}$ is called \textit{self-similar} if for every $g\in G$ and $x\in X$ there exist $y\in X$ and $h\in G$ such that
+		$g(xw)=yh(w)$ for all $w\in X^{*}$.
+		
+		Usually a short notation is used, that originates from another definition using automata: 
+		\begin{equation} \label{eq:self-similar definition}
+			g \cdot x = y \cdot h	
+		\end{equation}
+		where $h$ is also noted as $g|_x$ and called a \textit{restriction} of $g$ on $x$.
+	\end{definition}
+	
+	Consequently, restriction expands to every word over $X$: given a word $xw, x \in X, w \in X^*$ and elements $g, h \in G$, the following rules appear: 
+	$$ 
+	g(xw) = g(x) g|_x (w); \quad \quad g|_{xw} = g|_x|_w;  \quad \quad (gh)|_w = g|_w h|_w; 
+	$$ 
+	$$ 
+	(gh)(xw) = g( h(x)h|_x(w) ) = (gh)(x) (g|_{h(x)}h|_x)(w); 
+	$$
+	
+	
+	It should be noted, that any element $g \in G$ can be defined accordingly to it's action on $X^*$: 
+	$$
+	g = \pi (g\arrowvert_{x_1} g\arrowvert_{x_2} \dots g\arrowvert_{x_n})
+	$$
+	where $\pi \in Sym(X)$, such that $\pi(x) = g(x) = y$ from the (\ref{eq:self-similar definition}), $X = \{x_1 x_2 \dots x_n\}$. This notation is also called \textit{wreath recursion}, that is a homomorphism 
+	$$
+	\phi : G \rightarrow Sym(X) \wr G
+	$$
+	where the symbol $\wr$ refers to the \textit{wreath product}, however in this article we will not use any properties of this operation. Once again, more details in \cite{Nekrashevych:self-similar} and \cite{GeomAlgebra:Bondarenko}.
+	
+	
+	
+	
+	\begin{proposition} \label{self-similar:subgroup}
+		Let $H$ be a subgroup of finite index in the group $G$. If $H$ admits a self-similar action, then $G$ admits a self-similar action.
+	\end{proposition}
+	\begin{proof}
+		Let $(H,X^{*})$ be a self-similar action. Let $D$ be a set of coset representatives for $H$ in $G$ with $e\in D$. We construct a self-similar action of $G$ over the alphabet $Y=D\times X$. The action is defined by the rule: for $g\in G$ and $(d,x)\in Y$,
+		\[
+		g(d,x)=(c,y) \quad \mbox{ and } \quad g|_{(d,x)}=h|_x,
+		\]
+		where $c\in D$ is the unique element such that $h=c^{-1}gd\in H$ and $y=h(x)$.
+		It is straightforward to check that the action is well-defined. This action is faithful, because every $g\in G\setminus H$ acts nontrivially on $Y$ and $H$ acts faithfully on the subspace $(\{e\}\times X)^{*}$ of $Y^{*}$.
+		\begin{align*} % the action is well-defined
+			g_1g_2 \cdot (d,x) &= g_1 \cdot (c,h_2(x)) \cdot h_2|_x \qquad && h_2=c^{-1}g_2d\\
+			&= (b,h_1(h_2(x))) \cdot h_1|_{h_2(x)}h_2|_x \qquad && h_1=b^{-1}g_1c\\
+			(g_1g_2) \cdot (d,x) &= (b,h(x)) \cdot h|_x \qquad && h=b^{-1}g_1g_2d=h_1h_2
+		\end{align*}
+		
+	\end{proof}
+	
+		
+	
+	\begin{corollary}
+		Every finitely generated virtually free group admits a self-similar action.
+	\end{corollary}
+	\begin{proof}
+		Every finitely generated free group admits a self-similar action by the results in \cite{self-similar:free groups}.
+	\end{proof}
+	
+	
+	\begin{corollary} \label{cor: self-similar actions of cryst}
+		Every finitely generated virtually abelian group admits a self-similar action. In particular, every crystallographic group admits a self-similar action.
+	\end{corollary}
+	\begin{proof}
+		A finitely generated virtually abelian group contains $\mathbb{Z}^n$ for some $n\in\mathbb{N}$ as a subgroup of finite index, which admits a self-similar action by \cite{Nekrashevych:self-similar}. Generalized proof one can find a bit later in Theorem \ref{theorem: self-similar free abelian}.
+	\end{proof}
+	
+	\begin{definition}
+		A self-similar action $(G,X^{*})$ is called \textit{self-replicating} (also known as recurrent), if for every $x,y\in X$ and $h\in G$ there exists $g\in G$ such that $g(x)=y$ and $g|_x=h$.
+	\end{definition}
+	
+	
+	Another important class of self-similar actions are \textit{contracting} actions, that is there exists a finite set $\mathcal{N}$ such that for every $g \in G$ there exists $k \in \mathbb{N}$ such that $g\arrowvert_v \in \mathcal{N}$ for all words $v \in X^*$ of length $\ge k$. The smallest set $\mathcal{N}$ with this property is called the \textit{nucleus} of the self-similar action. 
+	
+	\subsection{Associative virtual endomorphisms of a self-similar action} Associative virtual endomorphisms are an essential concept in the study of self-similar actions of groups. One of the main benefits of using them is that they provide a powerful tool for constructing self-similar actions. These actions can be described using iterated function systems (IFS), which are sets of contractive maps on a metric space that generate the self-similar action. The virtual endomorphisms provide a way to generalize these IFSs to more complicated groups, in our case crystallographic groups, about which later on. 
+	
+	In this section we review some properties of virtual endomorphisms and show how self-similar actions are connected to them. For more information one may check \cite{Nekrashevych:self-similar} and \cite{Nekrashevych:virtual_endomorphisms}, yet it should be noted that those sources introduce considered concepts using the language of so-called permutational bimodules, which is quite sophisticated way to do so and thus might be too complex for our current task. 
+	
+	\begin{definition}
+		A \textit{virtual homomorphism} $\phi: G_1 \dashrightarrow G_2$ is a homomorphism of groups $\phi: \Dom \phi \rightarrow G_2$, where $\Dom \phi < G_1$ is a subgroup of finite index called the \textit{domain} of the virtual homomorphism. A \textit{virtual endomorphism} of group is a virtual homomorphism $\phi: G \dashrightarrow G$.
+	\end{definition}
+	
+	
+	A composition of two virtual homomorphisms $\phi_1: G_1 \dashrightarrow G_2$ and $\phi_2: G_2 \dashrightarrow G_3$ is defined for an element $g \in G_1$ if and only if $g \in \Dom\phi_1$ and $\phi_2(g) \in \Dom\phi_2$. Therefore, the domain of the composition $\phi_1 \circ \phi_2$ is the subgroup 
+	$$
+	\Dom (\phi_1 \circ \phi_2) = \{g \in \Dom \phi_1: \phi_1 (g) \in \Dom \phi_2\} \le G_1.
+	$$
+	
+	
+	\begin{proposition}
+		Let $\phi_1: G_1 \dashrightarrow G_2$ and $\phi_2: G_2 \dashrightarrow G_3$ be two virtual homomorphisms. Then 
+		$$
+		[\Dom \phi_1 : \Dom (\phi_1 \circ \phi_2)] \le [G_2: \Dom \phi_2]
+		$$
+		and if $\phi_1$ is surjective the equality holds .
+		
+	\end{proposition}
+	
+	
+	\begin{corollary}
+		A composition of two virtual homomorphisms is again a virtual homomorphism.
+	\end{corollary}
+	
+	\begin{definition}
+		Let $\phi$ be a virtual endomorphism of a group $G$. A subgroup $H \le G$ is said to be $\phi$-\textit{invariant} if $H \subseteq \Dom \phi$ and $\phi(H) \subseteq H$.
+	\end{definition}
+	
+	
+	If $H \le G$ is $\phi$-invariant, then it is a subgroup of $\Dom \phi^n$. On the other hand, the \textit{parabolic subgroup}
+	$$
+	P(\phi) = \bigcap_{n \in \mathbb{N}} \Dom \phi^n
+	$$  
+	is $\phi$-invariant, as well as $ \Ker \phi$, in case it's not trivial. The parabolic subgroup is the maximal $\phi$-invariant subgroup of $G$.
+	
+	\begin{proposition}
+		The subgroup $K(\phi)$, also known as \textbf{$\phi$-core}, that is defined as  
+		$$
+		K(\phi) = \bigcap_{n\ge1}\bigcap_{g \in G} g^{-1} \Dom \phi^n g
+		$$
+		is the maximal one among the \textbf{normal $\phi$-invariant subgroups} of $G$.
+	\end{proposition}
+	
+	
+	\begin{definition}
+	A virtual endomorphism $\phi$ is said to be \textit{simple} if it's core is trivial, or in other words $K(\phi) = \{e\}$.
+	
+	\end{definition}
+	\begin{remark}
+		The kernel $\Ker \phi$ is a normal $\phi$-invariant subgroup of $\Dom \phi$ and generally it doesn't follow that $\Ker \phi$ is also normal in $G$. For abelian groups it obviously holds and for the nilpotent case one can find more details in \cite{nilpotent_kernel}.
+	\end{remark}
+	
+	The $\phi$-core plays important role when considered in terms of a self-similar action, since the action is faithful if and only if $\phi$-core of a so called associative virtual endomorphism is trivial.  
+	
+	
+	\begin{definition}
+		
+		The map $\phi_x : G \dashrightarrow G$ defined by the condition
+		$$
+		g \cdot x = x \cdot \phi_x (g)
+		$$ 
+		is called \textit{associative virtual endomorphism} of self-similar action $(G, X^*)$.
+	\end{definition}
+	
+	\begin{proposition}
+		Let $(G, X^*)$ be a self-similar action of a group $G$ with an arbitrary associative virtual endomorphism $\phi$. 
+		
+		\begin{enumerate}[label=\arabic*.]
+			\item If $N$ is a normal subgroup of G, and $N$ is $\phi$-invariant, then $N$ is contained in the kernel of the self-similar action.
+			
+			\item The kernel of self-similar action is equal to the $\phi$-core.
+		\end{enumerate} 
+		
+	\end{proposition}
+	
+	\begin{remark}
+		In the settings of Proposition~\ref{self-similar:subgroup}, if the action of $H$ is transitive, then the action of $G$ constructed in the proof is transitive too. The associated virtual endomorphism is the same.
+		
+	\end{remark}
+	
+	
+	Unfortunately, from the definition it is clear that the associative virtual endomorphism $\phi$ isn't unique for the given self-similar action. For this purpose, the following concept is introduced. 
+	
+	\begin{definition}
+		It is said that virtual homomorphisms $\phi_1, \phi_2: G_1 \dashrightarrow G_2$ are \textit{conjugate} if there exist $g_1 \in G_1, g_2 \in G_2$ such that $\Dom \phi_1 = g_1^{-1} \cdot \Dom \phi_2 \cdot g_1$ and 
+		$$
+		\phi_2(x) = g_2^{-1}\phi_1(g_1^{-1}xg_1)g_2
+		$$
+		for all $x \in \Dom \phi_2$
+	\end{definition}
+	
+	
+	\begin{definition}
+		A self-similar action $(G, X)$ is \textit{transitive on the first level} $X^{1} $ if for every $x_1, x_2 \in X$ there exist such $g, h \in G$ that $g \cdot x_1 = x_2 \cdot h$
+	\end{definition}
+	
+	
+	\begin{proposition}\label{virtual_end:conjugate}
+		Let $(G, X)$ be a self-similar action, that is transitive on the first level $X^{1}$. Then every two associated virtual endomorphisms $\phi_x$ and $\phi_y$ are conjugate. Moreover, if $\phi$ is conjugate to an associative virtual endomorphism $\phi_x$, then there exist an alphabet $Y$, self-similar action $(G, Y)$ and $y \in Y$ such that $\phi = \phi_y$. 
+	\end{proposition}
+
+	\begin{proof}
+		Since $(G, X)$ is transitive on the first level $X^{1}$, there exist $g, h \in G$ such that $y = g \cdot x \cdot h$. Then for every $f \in \Dom \phi_y$ we have 
+		$$
+		f \cdot y = y \cdot \phi_y(f) 
+		\quad \Rightarrow \quad 
+		f g \cdot x \cdot h = g \cdot x \cdot h \phi|_y (f)
+		$$
+		$$
+		\Rightarrow \quad  g^{-1} fg \cdot x = x \cdot h \phi|_y(f) h^{-1}.
+		$$
+		It follows that $g^{-1} f g \in \Dom \phi_x$ and as a result $\phi_y(f) = h^{-1}\phi_x(g^{-1}fg)h$. 
+		
+		
+		% TODO: rewrite
+		
+		And vise versa, from $\phi(f) = h^{-1}\phi|_x(g^{-1}fg)h$ follows that $\phi$ is associated to the $(G, X)$.
+	\end{proof}
+	
+	
+	Finally, we are ready to built a self-similar action only using an arbitrary virtual endomorphism. 
+	
+	Consider a group $G$ and an arbitrary virtual endomorphism $\phi : G \dashrightarrow G$. Since $\Dom \phi < G$ we can consider left coset transversal $T = \{g_i \in G\}_{i = 1, \dots d}$ for $ \Dom \phi < G$, where $d = [G : \Dom \phi]$, such that $g_1 = e$ represents $\Dom \phi$ itself. 
+	
+	
+	% TODO: split into definition and proposition 
+	
+	\begin{proposition}
+		Consider an alphabet $X = \{x_i = g_i h_i\}_{i = 1 \dots d}$ given arbitrary sequence $C = \{h_i \in G\}_{i = 1 \dots d}$ with only condition $h_1 = e$. Then the associated self-similar action $(G, X)$ is transitive on the first level and is defined by the formula: 
+		\begin{equation}\label{eq:self-similar from virt}
+			g \cdot x_i = x_j \cdot h^{-1}_j \phi(g_j^{-1} g g_i) h_i	
+		\end{equation}
+		where $j$ is such that $g^{-1}_j g g_i \in \Dom \phi$.
+		
+	\end{proposition}
+	
+	\begin{proof}
+		We need to prove that $(G, X)$ is indeed a self-similar action that is transitive on the first level, and $\phi$ is an associative virtual endomorphism. For $g \in \Dom \phi$ we obviously have $g \cdot x_1 = x_1 \cdot \phi(g)$ and thus $\phi = \phi_{x_1}$. If, however, given arbitrary $x_i, x_j \in X$, considering $g = g_j g_i^{-1}$ we obtain $g^{-1}_j g g_i \in \Dom \phi$ and (\ref{eq:self-similar from virt}) holds. 
+		
+	\end{proof}
+	
+	\begin{corollary}
+		The associated virtual endomorphism determines the associated self-similar action uniquely up to a conjugacy.
+	\end{corollary}
+
+	\begin{corollary}
+		The result self-similar action $(G, X)$ is faithful if and only if $\phi$ is simple. 
+	\end{corollary}
+	
+	\begin{corollary}
+		The result self-similar action $(G, X)$ is self-replicating if and only if $\phi$ is a surjective endomorphism.
+	\end{corollary}
+	
+	
+	\subsection{Crystallographic groups} Crystallographic groups are a fundamental concept in the study of crystal structures, which are the three-dimensional arrangements of atoms or molecules in a solid material. These groups describe the symmetry of the crystal structures and therefore are central to understanding the physical and chemical properties of materials. 
+	
+	In the mathematics per se, they originated in the 19th and early 20th centuries as a response to the famous 18th Hilbert Problem, which asked for a complete classification of all possible forms of symmetry composed with parallel translations in three-dimensional space. 	
+	
+	We review basic information about crystallographic groups (check \cite{cryst:group_theory} and \cite{cryst:geometry_of_cryst} for more details).
+	
+	
+	\begin{definition}
+		A map $f: \mathbb{R}^n \rightarrow \mathbb{R}^n$ such that for any $x, y \in \mathbb{R}^n$
+		$$
+		||x - y|| = ||f(x) - f(y)||
+		$$
+		is called an \textit{isometry}.  
+		It is clear that the set of all isometries of $\mathbb{R}^n$ form a group $\mathbf{E}(n)$ with respect to composition of maps.
+	\end{definition}
+	
+	
+	\begin{proposition} Group of isometries is in fact a semidirect product
+		$$\mathbf{E}(n) = \mathbf{O}(n) \ltimes \mathbb{R}^n$$
+		where $\mathbf{O}(n)$ denotes the group of linear orthogonal maps on $\mathbb{R}^n$.
+	\end{proposition}
+	
+	\begin{corollary}
+		Every element $f \in \mathbf{E}(n)$ can be represented as following: 
+		$$
+		f = A + t, \quad A \in \mathbf{O}(n), \, t \in \mathbb{R}^n.
+		$$
+		Here $A$ is called a linear part of $f$ and $t$ is a translation.
+	\end{corollary}
+	
+	
+	\begin{proposition}
+		There is following sequence of subgroups: 
+		$$
+		\mathbf{E}(n) \subset \mathbf{A}(n) \subset GL(n + 1, \mathbb{R}),
+		$$
+		where $\mathbf{A}(n) = GL(n, \mathbb{R}) \ltimes \mathbb{R}^n$ is an affine group.
+	\end{proposition}
+	
+	Recall that subset is called \textit{cocompat} if its complement is compact.
+	
+	\begin{definition}
+		A \textit{crystallographic group} of dimension $n$ is a cocompact discrete subgroup in $\mathbf{E}(n)$.
+		
+		Crystallographic groups of dimension 2 are also known as plane groups or wallpaper groups. Similarly, crystallographic groups of $\mathbf{E}(3)$ are space groups. 
+		
+	\end{definition}
+	
+	Thankfully to Bieberbach~\cite{Bieberbach:Original} we have a good description of discrete cocompact isometries of $\mathbb{R}^n$.
+	
+	\begin{theorem}
+		(Bieberbach, 1910)
+		\begin{enumerate}[label=\arabic*.]
+			\item If $\Gamma \subset \mathbf{E}(n)$ is a crystallographic group then the set of translations $\Gamma \cap (I \times \mathbb{R}^n)$ is a torsion free and finitely generated abelian group of rank $n$, and is a maximal abelian and normal subgroup of finite index.
+			\item Two crystallographic groups of dimension $n$ are isomorphic if and only if they are conjugate in the affine group $\mathbf{A}(n)$.
+			
+			\item For any natural $n$ there are only finite number of isomorphism classes of crystallographic groups of dimension $n$.			
+		\end{enumerate}
+		
+	
+	\end{theorem}
+	
+	
+	Let $\Gamma$ be an arbitrary crystallographic group and $L \simeq \mathbb{Z}^n$ is the maximal abelian and normal subgroup of finite index, also known as a $\Gamma$'s \textit{lattice}, while $G = \Pi(\Gamma) =  \{A | A + t \in \Gamma\}$ is a \textit{point group}. Unfortunately, in most cases $\Gamma \neq G \ltimes L$ and thus every crystallographic group is specified via the triplet ($G, L, \alpha$), where $a$ denotes correspondence between matrices $g \in G$ and $t_g = \alpha(g) + L$ for every element $g + t_g \in \Gamma.$ 
+		
+	\begin{proposition}
+	
+		If $\Gamma$ is an abelian crystallographic group then $\Gamma$ contains only pure translations.  	
+		
+	\end{proposition}
+
+	\begin{proposition}
+		\textbf{(Zassenhaus theorem)} A group $\Gamma$ is isomorphic to a crystallographic group of dimension $n$ iff $\Gamma$ has a normal, free abelian subgroup $\mathbb{Z}^n$ of finite index which is a maximal abelian subgroup of $\Gamma$.	
+	
+	\end{proposition}
+	\newpage	
+	\section{Main results}\label{section: main results}
+	
+	
+	
+	At this point we have a straightforward algorithm of describing every possible self-similar action for a group $G$: 
+	
+	
+	\begin{algorithm}  Self-similar actions of a group $G$.
+		
+	\begin{enumerate}[label=\arabic*.]
+		\item describe every subgroup of finite index $H < G$; 
+		\item describe every homomorphisms $\phi : H \rightarrow G$;
+		\item provide a criterion when $\phi$ is simple to guarantee faithfulness of the result self-similar action;
+		\item (optional) describe conjugacy classes of virtual endomorphisms $\phi: G \dashrightarrow G$;
+		\item (optional) describe subset of surjective virtual endomorphisms to have self-replicating action.
+	\end{enumerate}
+		
+	\end{algorithm}
+	
+	
+	
+	However, for the most cases this problem is quite challenging, starting from the point of describing every virtual endomorphisms. Originally in \cite{Nekrashevych: 1/2-endomorphisms} Volodymyr Nekrashevych described self-replicating actions of the free abelian groups $\mathbb{Z}^n$. We will start from the description of all self-similar actions of free abelian groups, then expand this result to the finitely generated abelian groups and finally give a description of self-replicating actions of crystallographic groups.
+	
+	
+	\subsection{Self-similar actions of free abelian groups}
+	
+	Let $H < \mathbb{Z}^n$ be an arbitrary one. $H$ is also finitely generated abelian and thus $H$ is isomorphic to the $\mathbb{Z}^n$. Then, $H$ is the exact image of an endomorphism $\psi :\mathbb{Z}^n \rightarrow \mathbb{Z}^n$, that is given by generators of $H$. From linear algebra we know that $\psi(g \in \mathbb{Z}^n ) = Ag$ for a matrix $A$ where columns are the generators of $H$. 
+	
+	\begin{proposition}\label{proposition:subgroups vs matrices}
+		There is a correspondence between subgroups of finite index $H < \mathbb{Z}^n$ and integral matrices $A$ with $\det(A) \neq 0$, such that $H = A (\mathbb{Z}^n)$. Two matrices $A$ and $B$ correspond to the same subgroup if and only if there exists integral $P$ such that $|\det(P)| = 1$ and $B = AP$. 
+		
+	\end{proposition}
+	
+	\begin{proof}
+		$\det(A) \ne 0$, because otherwise $\dim H < n$ considering $H$ as linear space and as a result $[\mathbb{Z}^n: H] = \infty$. $A$ is unique up to the chosen set of generators. Let $A$ maps generators of $\mathbb{Z}^n$ to $\{a_1, a_2, \dots a_n\}$ and $B$ to $\{b_1, b_2, \dots b_n\}$ respectively. Therefore $A$ and $B$ represent the same subgroup if and only if there exist linear combinations of $a_i$ with integral coefficients which generate $b_i$ and vise versa. In other words, there exists integral $P$ with integral inverse $P^{-1}$ as well, or equivalently $\det(P) = 1$, such that $B = AP$. 
+	\end{proof}
+	
+	
+	\begin{theorem}\label{theorem: self-similar free abelian} \quad
+		  
+		\begin{enumerate}[label=\arabic*.]
+			
+			\item There is a correspondence between virtual endomorphisms $\phi : \mathbb{Z}^n \dashrightarrow \mathbb{Z}^n$ and pairs of integral $n\times n$ matrices $(A_1, A_2)$ such that $\det(A_1) \neq 0$, given by the rule:
+			$$
+			\pi = (A_1, A_2) \mapsto  \phi_{\pi}: A_1(\mathbb{Z}^n) \rightarrow \mathbb{Z}^n, \quad \phi_\pi (g) = A_2 A_1^{-1} g
+			$$
+			and two pairs $(A_1, A_2)$ and $(B_1, B_2)$ represent the same $\phi$ if and only if there exists an integral matrix $P$ with $|\det(P)|$ such that $B_1 = A_1 P, \, B_2 = A_2 P$.
+			
+			\item \label{criterion:free} The $\phi_\pi$ has trivial core if and only if $A = A_2A^{-1}_1$ is invertible and its characteristic polynomial is not divisible by a monic polynomial with integral coefficients. 
+			
+			
+			\item The $\phi_\pi$ is surjective iff $|\det(A_2)| = 1$. 
+			
+		\end{enumerate}
+	\end{theorem}
+	
+	\begin{remark}
+		Since $G$ is abelian obviously conjugacy classes of virtual endomorphisms are trivial. 
+	\end{remark}
+	
+	
+	
+	\begin{proof}
+	
+	
+		(1) Every $\phi : \mathbb{Z}^n \dashrightarrow \mathbb{Z}^n$ is in fact a homomorphism from $\Dom \phi $ to $ \Imag \phi$, where $\Imag \phi$ is a subgroup of $\mathbb{Z}^n$ as well. Hence, there exist $A_1, A_2$ quadratic matrices with integral coefficients such that $\det(A_1) \ne 0$ and for $g \in \Dom \phi$ we have $\phi(g) = A_2 A^{-1}_1 g$. As a result there is a strict correspondence between virtual endomorphisms $\phi : \mathbb{Z}^n \dashrightarrow \mathbb{Z}^n$ and the pair of matrices $(A_1, A_2)$. 
+		
+		If $(A_1, A_2)$ and $(B_1, B_2)$ represent the same virtual endomorphism, then from the proposition \ref{proposition:subgroups vs matrices} there exist integral $P_1, P_2$ such that $B_1 = A_1P_1,$ and $ B_2 = A_2P_2$. Then, since endomorphism acts the same 
+		$$
+		A = A_2 A_1^{-1} = B = B_2 B_1^{-1} = A_2P_2 P_1^{-1} A_1^{-1}
+		$$
+		from which follows that $P_1 = P_2$
+		
+		(2) Let's explore the $\phi$-core. It is easy to see that $\phi$ can be extended to a linear operator $\phi: \mathbb{Q}^n \rightarrow \mathbb{Q}^n$. Let $A = A_2 A_1^{-1}$ be a respective $n\times n$ matrix with rational coefficients. To construct a faithful self-similar action we need the $\phi$-core to be trivial, so we consider $A$ to be invertible (i.e. $\det(A_2) \ne 0$ as well), since otherwise $\Ker \phi|_G \neq \{e\}$ is a non-empty normal $\phi$-invariant subgroup of $\mathbb{Z}^n$. Then $\Dom \phi|_{G} = A^{-1}( \mathbb{Z}^n) \cap \mathbb{Z}^n$ and there is $k \in \mathbb{Z}$ such that $kA$ has integral coefficients.
+		
+		\begin{remark}
+			Actually, $\Dom|_G$ can be narrower than $A^{-1}(\mathbb{Z}^n) \cap \mathbb{Z}^n$. For example, consider $\phi : 4 \mathbb{Z} \rightarrow 2\mathbb{Z}$ such that $\phi(4k) = 2k$ and $\phi(k) = e$ for any $k \notin 4\mathbb{Z}$. Then $A = (1/2)$, yet $A^{-1} \mathbb{Z} = 2\mathbb{Z} > 4\mathbb{Z}$. 
+		\end{remark}
+		
+		
+		
+		We will split the proof into two parts. Firstly, consider the case when $\phi$ can't be extended to the greater subgroup, or in other words $\Dom \phi = A^{-1} (\mathbb{Z}^n) \cap \mathbb{Z}^n$.  
+		 
+		($\Rightarrow$) Suppose $\phi$-core isn't trivial, i.e. there exists non-empty $U \lhd \Dom \phi$ such that $A(U) \le U$. Then the vector space $\mathbb{Q}^n$ can be decomposed as $\mathbb{Q}^n = \text{Span}(U) \oplus \overline{U}$ and we can choose basis where matrix A is a block-matrix 
+		$$ 
+		A = 		
+		\begin{bmatrix}
+			C & B \\
+			0 & D \\
+		\end{bmatrix}
+		$$
+		and $C$ is the matrix of a restriction $\phi|_U$. Since $U \subset \mathbb{Z}^n$ and $C(U) \le U$ it follows that characteristic polynomial of C is a monic polynomial with integral coefficients and is a factor of the characteristic polynomial of $A$.
+		
+		($\Leftarrow$) Suppose $f(x) = x^k + a_1 x^{k-1} + \dots a_k \in \mathbb{Z}[x]$ is an irreducible factor of the characteristic polynomial of $A$. Let $\widehat{U} \le \mathbb{Q}^n$ be the kernel of the operator $f(A)$ and let $C$ be the matrix of a restriction of $ \phi|_{\widehat{U}}$. Consequently $f(x)$ is the characteristic polynomial of $C$. Then, for arbitrary non-zero element $v \in \widehat{U}$ the vectors $v, C(v), C^2(v), \dots, C^{k-1}(v)$ form a basis of the space $\widehat{U}$ and the matrix $C$ in this basis has integral coefficients. Therefore there exists a nonzero integer $q$ such that $qv, qC(v), qC^2(v), \dots, qC^{k-1}(v)$ are integral and form a basis of the space $\widehat{U}$ and $C$ with integral coefficients as well. Thus, $U = \widehat{U} \cap \mathbb{Z}^n$ is a nontrivial $\phi$-invariant subgroup, which is also normal since $\mathbb{Z}^n$ is abelian. 
+		
+		Secondly, let $H < H' < \mathbb{Z}^n$ be a sequence of proper subgroups of finite index. Let also $\phi : H \rightarrow \mathbb{Z}^n$ and $\phi' : H' \rightarrow \mathbb{Z}^n$ be virtual endomorphisms such that $\phi = \phi'|_H$. We will prove now that $\phi$ has simple core if and only if $\phi'$ has. 
+	
+		($\Leftarrow$) $\phi'$ has trivial core, then 
+		$$
+		K(\phi) = \bigcap_{k \ge 1} \Dom \phi^k \le \bigcap_{k \ge 1} \Dom (\phi')^k = \{e\}
+		$$ 
+		
+		($\Rightarrow$) Ad absurdum. Assume $\phi$ has simple core, while there is $N < H'$ such that $N$ is $\phi'$-invariant. $N \cap H = \{e\}$ since otherwise the intersection would lie within the $\phi$-core, while $N \simeq \mathbb{Z}^k$ for some $k \le n$ since $N$ is a subgroup. Hence $H \oplus N < H' < \mathbb{Z}^n$ which implies $[\mathbb{Z}^n : H] = \infty$.
+		
+		
+		(3) If $\phi_\pi$ is surjective, then $A_2(\mathbb{Z}^n) = \mathbb{Z}^n$ and therefore $\Dom \phi_\pi = A_1 A_2^{-1} (\mathbb{Z}^n)$. From the proposition \ref{proposition:subgroups vs matrices} we know that $A_2^{-1}$ has integral entities and $|\det(A_2)| = 1$, QED. 
+	\end{proof}
+	
+	\begin{corollary}
+		The set of virtual endomorphisms of $\mathbb{Z}^n$ form a semigroup $(VEnd(\mathbb{Z}^n), \circ)$, with action "$\circ$" that is the composition. For two virtual endomorphisms $\phi, \psi : \mathbb{Z}^n \rightarrow \mathbb{Z}^n$ given by $(A_1, A_2)$ and $(B_1, B_2)$ respectively, the composition is defined by
+		$$
+		(A_1, A_2) \circ (B_1, B_2) = (A_1A_2^{-1}B_1, B_2).
+		$$
+	\end{corollary}
+
+	\begin{proof}
+		By definition, the composition of two virtual endomorphisms has domain 
+		$$
+		\Dom (\phi \circ \psi) = \left\{
+			g \in \Dom \phi: \phi (g) \in \Dom \psi
+		\right\}.
+		$$
+		In terms of matrices we have 
+		$$
+		\Dom (\phi \circ \psi) = \left\{
+			g \in A_1(\mathbb{Z}^n) : A_2A_1^{-1}g \in B_1(\mathbb{Z}^n)
+		\right\} = A_1A_2^{-1}B_1(\mathbb{Z}^n)
+		$$
+		and when we apply the composition for $g \in \Dom(\phi \circ \psi)$: 
+		$$
+		(\phi \circ \psi)(g) = (B_2B_1^{-1})(A_2A_1^{-1})g= B_2(A_1A_2^{-1}B_1)^{-1}g \in B_2(\mathbb{Z}^n).
+		$$
+	\end{proof}
+
+	\subsection{Self-similar actions of finitely generated abelian groups}  
+	Every finitely generated abelian group $G$ decomposes into a direct sum $G = \mathbb{Z}^n \oplus F$, where $F$ is a finite abelian group. The endomorphism group $\End(G)$ of $G$ consists of triplets: 
+	\begin{equation} \label{eq:general form of virt_end of finit-gen abelian}
+		\phi = \begin{pmatrix}
+			A_\phi & 0 \\ 
+			B_\phi & C_\phi \\
+		\end{pmatrix}
+	\end{equation} 
+	where $A\in \End(\mathbb{Z}^n) = GL(n, \mathbb{Z})$, $B \in \Hom(\mathbb{Z}^n, F)$ and $C \in \End(F)$. For every endomorphism $\phi \in \End(G)$ the image $\phi(G) = A_\phi(\mathbb{Z}^n) \oplus (B_\phi(\mathbb{Z}^n) + C_\phi(F))$ is a subgroup of $G$. 
+	
+	\begin{proposition} \label{prop: image of endomorphism}
+		Let $G$ be a finitely generated abelian group. For every subgroup $H < G$ there is an endomorphism $\phi \in \End(G)$ such that $H = \phi(G)$. 
+	\end{proposition}
+	
+	
+	\begin{proof}
+		Every finitely generated abelian group is also a quotient group of free abelian, that is for $m = n + \mathlarger\sum_i n_i $ there exists $\hat{G} < \mathbb{Z}^m$ such that $G = \mathbb{Z}^m / \hat{G}$. Then, by correspondence theorem for every $H < G$ there exists subgroup $\hat{G} < H' < \mathbb{Z}^m$ isomorphic to $H$. From the previous section we know that every subgroup of free abelian group is an image of endomorphism $\phi'$, which is given by an irreducible integral matrix $A'$. Then we can construct a correctly defined endomorphism $\phi : G \rightarrow H$, which is given by
+		$$
+		\phi(g \in G) = \phi\left(g\hat{G} \in \mathbb{Z}^m / \hat{G}\right) := \phi'(g)\hat{G}
+		$$
+		and the next diagram is commutative: 
+		$$	
+		\begin{tikzcd}
+			\mathbb{Z}^m \arrow{r}{\pi} \arrow{d}{\phi'} & G \arrow{d}{\phi} \\
+			H' \arrow{r}{\pi} & H
+		\end{tikzcd}.
+		$$
+	\end{proof}
+		
+		
+		% For this purpose, instead we consider $(A_1', A_2')$ such that $H' = A_1'(\mathbb{Z}^n)$ and $\psi'(g) = A_2'g$. Since every finite part $\mathbb{Z}_{p_i}^{n_i}$ has prime $p_i$, it is in fact a linear space over the field $\mathbb{Z}_{p_i}$. Combining this and the choice of $m = n + \mathlarger\sum_i n_i$, we can directly apply to the $A_1'$ respective modulos $A_1 := A_1' \mod \hat G$ and then get a correctly defined endomorphism $\psi : G \rightarrow H$, which is given by 
+		
+		% It leads to $H = \Imag \psi$, and we can apply a similar approach to the matrix $A_2 := A_2'$. 
+		
+		
+	
+	
+	Moreover, endomorphisms of abelian groups form a ring, that is well studied. In \cite{abelian_endomorphisms} the general form for finitely generated groups is given: 
+	
+
+	\begin{theorem} \label{theorem:abelian_endomorph}
+		For a group that is a direct sum of abelian groups $A = {\mathlarger{\sum_{1 \le i \le n}}}^\oplus A_i$ the endomorphism ring $\End(A)$ is isomorphic to the ring of all matrices $[a_{ji}]$ of order $n$, where $a_{ji} \in \Hom(A_i, A_j)$.
+	\end{theorem}
+
+	As an example, in case $G = \mathbb{Z}^n \oplus \mathbb{Z}^m_k$: 
+	$$
+	\End(G) = 
+	\begin{pmatrix}
+		\mathbb{Z}^{n \times n} & 0 \\
+		\mathbb{Z}^{m \times n}_k & \mathbb{Z}^{m \times m}_k \\
+	\end{pmatrix}.
+	$$  
+	\begin{corollary}
+		$H$ has finite index if and only if $\det(A_\phi) \ne 0$.
+	\end{corollary}	
+	\begin{proof}
+		
+		Due to the general form (\ref{eq:general form of virt_end of finit-gen abelian}) and Theorem \ref{theorem:abelian_endomorph}, we get that $\phi'$ is given by the matrix with integer numbers. Since $H \cap \mathbb{Z}^n$ is an image of $A_\phi (\mathbb{Z}^n)$ we have that $[G : H] < \infty \Leftrightarrow A_\phi$ is irreducible. 
+	\end{proof}
+
+	
+	Recall that the finite part $F$ is also a direct sum of cyclic abelian $p$-groups:
+	$$
+	F = {\sum_{i}}^\oplus \mathbb{Z}_{q_i}^{n_i}, \quad q_i = p^k, \, p \in Primes.
+	$$
+	Denote for all distinct primes $p_{i}$ direct sum $F_{p_i} = {\mathlarger\sum_{i}}^\oplus \mathbb{Z}_{q_i}^{n_i}$ for every $q_i = p_i^k$, i.e. $F_{p_i}$ is a finite part that contains every $p_i$-summand. Then $\Hom(F_{p_i}, F_{p_j}) = \{0\}$ for different $p_i$ and $p_j$, which makes endomorphism $\phi$ have the following structure:
+	\begin{equation} \label{eq: matrix of abelian endomorphism}	
+		\phi = 		
+		\begin{pmatrix}
+			A       &  0       & 0        & 0 & \dots & 0 \\  
+			B_{p_1} &  A_{p_1} & 0        & 0 & \dots & 0 \\   
+			B_{p_2} &  0       & A_{p_2}  & 0 & \dots & 0 \\ 
+			\dots     & \dots    & \dots    & \dots & \dots & \dots  \\
+			B_{p_k} &  0       & 0        & 0 & \dots & A_{p_k} \\  
+		\end{pmatrix}
+	\end{equation} 
+	where $A$ is an $n \times n$ matrix with integral coefficients and is exactly a matrix of the restriction $\phi|_{\mathbb{Z}^n}$. $B_{p_i}$ represent homomorphisms from $\mathbb{Z}^n$ to the finite part $F_{p_i}$ and $A_{p_i}$ endomorphisms of $F_{p_i}$ respectively.
+	
+	With similar approach we can also derive the same general form of virtual endomorphisms $\phi : G \dashrightarrow G$. 
+	
+	\begin{proposition}
+		An arbitrary virtual endomorphism $\phi : G \dashrightarrow G$ has the form (\ref{eq: matrix of abelian endomorphism}).
+	\end{proposition}
+	
+	\begin{proof}
+		Due to the Proposition \ref{prop: image of endomorphism} we know that $\Dom \phi$ is an image of endomorphism, defined by the matrix $A_1$. $\Dom \phi$ is also finitely generated abelian group and therefore homomorphism from $\Dom \phi$ to $G$ is built via the triplet, just like in (\ref{eq: matrix of abelian endomorphism}). All the following statements are also true for this homomorphism.
+	\end{proof}
+
+
+	\begin{lemma}
+		Let $G = \mathbb{Z}^n_p$ for some $p \in Primes$. Then $H < G$ is in fact $\mathbb{Z}^k_p \oplus 0$ for some $k < n$ and any virtual endomorphism $\phi : H \rightarrow G$ has the following form: 
+		\begin{equation}
+			\phi = 
+			\begin{pmatrix}
+				A & 0 \\ 
+				B & 0 \\ 
+			\end{pmatrix}
+		\end{equation}
+		where $A \in \mathbb{Z}^{(n-k)\times(n-k)}_p$ and $B \in \mathbb{Z}^{k \times (n - k)}_p$ are arbitrary. $\phi$ is simple if and only if $\Ker B = \{0\}$ as for $B : \mathbb{Z}^k_p \oplus 0 \rightarrow 0 \oplus \mathbb{Z}^{n-k}$. 
+	\end{lemma}
+	\begin{proof}
+		($\Leftarrow$) Assume $\Ker B = \{0\}$. Then for every $(x, 0) \in H, x \ne 0$ we have 
+		$$
+		\begin{pmatrix}
+			A & 0 \\ 
+			B & 0 \\ 
+		\end{pmatrix}
+		\begin{pmatrix}
+			x \\ 
+			0
+		\end{pmatrix}
+		= 
+		\begin{pmatrix}
+			Ax \\ 
+			Bx
+		\end{pmatrix}
+		\notin H
+		$$
+		and $\phi(H) \cap H = \{0\}$, since otherwise $Bx = 0$ for non-zero $x$ and we have contradiction. 
+		
+		($\Rightarrow$) Ad absurdum assume $\phi$ is simple and $\Ker B \ne \{0\}$. Then $\Ker B < H$ is a normal $\phi$-invariant subgroup of of $G$, since for $(x, 0) \in H$ such that $x \in \Ker B$ we have $\phi(x, 0) = (Ax, 0) \in H$.  
+	\end{proof}
+	
+	\begin{lemma}
+		Consider virtual endomorphism $\phi: G \dashrightarrow G$ with the form (\ref{eq: matrix of abelian endomorphism}) such that $B_{p_i} = 0$ for every $p$. Then, $\phi$ is simple if and only if $A$ and every $A_{p_i}$ are simple.
+	\end{lemma}
+	
+	\begin{proof}
+		 If $B_{p_i} = 0$, then  $\phi(\mathbb{Z}^n) < \mathbb{Z}^n$ and $\phi(F_{p_i}) < \phi(F_{p_i})$. Then $G$ has normal $\phi$-invariant subgroup if and only if any of $F_{p_i}$ or $\mathbb{Z}^n$ has.  
+		
+	\end{proof}
+	
+	
+	\begin{theorem}\label{theorem: self-similar fintely generated}
+		Let $\phi : G \dashrightarrow G$ be a virtual endomorphism  of the finitely generated abelian group $G = \mathbb{Z}^n \oplus F$. 
+		
+		\begin{enumerate}[label=\arabic*.]
+			\item $\phi$ is simple if and only if $A_\phi$ has no eigenvalue that is algebraic integer and $C_\phi$ is simple as virtual endomorphism on $F$.
+			
+			\item If $\phi$ is surjective and simple, then $G$ is free abelian.
+		\end{enumerate}
+		
+	\end{theorem}
+	
+	\begin{proof}
+		
+		1. To prove this statement we will need several lemmas. 
+		
+		\begin{lemma}
+			There exists pair of matrices $(A_1, A_2)$ which defines a virtual endomorphism on the $\mathbb{Z}^n$ as in terms of the Theorem \ref{theorem: self-similar free abelian}.
+		\end{lemma}
+		
+		\begin{proof}
+		
+		Due to the Proposition \ref{prop: image of endomorphism} $\Dom \phi$ is an image of some endomorphism $\psi$ that is given by a triplet 
+		\begin{equation} \label{eq: multiplication of endomorphism of finitely generated abelian}
+			\psi(g) =
+			\begin{pmatrix}
+				A_\psi & 0 \\
+				B_\psi & C_\psi \\
+			\end{pmatrix}
+			\begin{pmatrix}
+				x \\ 
+				y 
+			\end{pmatrix}
+			= \begin{pmatrix}
+				A_\psi x \\ 
+				B_\psi x + C_\psi y
+			\end{pmatrix}
+		\end{equation}
+		where $x \in \mathbb{Z}^n$ and $y \in F$. Recall that $\Dom \phi$ is also a finitely generated abelian and from \ref{eq: multiplication of endomorphism of finitely generated abelian} we have $\Dom \phi = A_{\psi}(\mathbb{Z}^n) \oplus F'$. Therefore, we have a virtual endomorphism $\phi_{\mathbb{Z}^n} : \mathbb{Z}^n \dashrightarrow \mathbb{Z}^n$ that is given by the pair of matrices $(A_1, A_2) = (A_\psi, A_{\phi} A_{\psi})$.
+			
+		\end{proof}
+
+	 	\begin{lemma}
+			There exist matrix $A_K$ such that $\Ker B_\phi = A_K \mathbb{Z}^n$ and the pair $(A_K, A_2 A_1^{-1} A_K)$ defines the homomorphism $\phi|_{\Ker B_\phi} : \Ker B_\phi \rightarrow \mathbb{Z}^n$.			
+		\end{lemma}
+		
+		\begin{proof}
+			Since $G = \mathbb{Z}^n \oplus F$ and $F$ is finite, $\Ker B_\phi \sim \mathbb{Z}^n$ as kernel of the homomorphism from $\mathbb{Z}^n$ to $F$. Therefore, there exists integral matrix $A_K$ such that $A_K$ maps $\mathbb{Z}^n$ to $\Ker B_\phi$. Taking into account that $\phi(g \in \Ker B_\phi) \in \mathbb{Z}^n$ we have a correctly defined virtual endomorphism $\phi_{\Ker} : A_K(\mathbb{Z}^n) \rightarrow \mathbb{Z}^n$ by the pair of matrices $(A_K, A_\phi A_K)$ or equivalently $(A_K, A_2A_1^{-1}A_k)$	
+		\end{proof}
+		
+		\begin{lemma}
+			$\phi$ is simple if and only if virtual endomorphisms $C_\phi$ and $\phi|_{\Ker B_\phi}$ are simple.
+		\end{lemma}
+		\begin{proof}
+			($\Rightarrow$) Suppose $\phi$ is simple. Then $C_\phi$ and $\phi|_{\Ker B_\phi}$ are simple since $C_\phi(F) \subset F$ and $\phi|_{\Ker B_\phi}(\Ker B_\phi) \subset \Ker B_\phi$.  
+			
+			($\Leftarrow$) Ad absurdum. Assume $C_\phi$ and $(A_K, A_\phi A_K)$ are simple and $\phi$ is not. Then there exists $N < G$ such that $\phi(N) \subset N$. It's clear that $N = Z_N \oplus F_N$ where $Z_N < \mathbb{Z}^n$ and $F_N < F$. Let's prove that this implies contradiction step-by-step.  
+			
+			\begin{enumerate}
+				\item \label{prop: N = Z_N} $N = Z_N$. Then by multiplication rule
+				$$
+				\phi(Z_N) = A_\phi Z_N \oplus B_\phi Z_N 
+				$$
+				and $\phi(Z_N) \subset Z_N$ if and only if $Z_N \subset \Ker B_\phi$ which immediately implies that $Z_N$ is normal $\phi$-invariant subgroup of $A_K \mathbb{Z}^n$ and $(A_K, A_\phi A_K)$ is not simple. 
+				
+				\item $N = F_N$. Then it is straightforward: 
+				$$
+				\phi(F_N) = C_\phi F_N \Rightarrow F_N \subset K(C_\phi)
+				$$
+				
+				\item $N = Z_N \oplus F_N$. Consider an arbitrary $g \in N$. Then 
+				$$
+				\phi(g) = 
+				\begin{pmatrix}
+					A_\phi & 0 \\ 
+					B_\phi & C_\phi   
+				\end{pmatrix}
+				\begin{pmatrix}
+					x \\
+					y
+				\end{pmatrix}
+				= \begin{pmatrix}
+					A_\phi x \\ 
+					B_\phi x + C_\phi y
+				\end{pmatrix}
+				$$ 
+				where $B_\phi x + C_\phi y \in F_N$ and thus has finite order. Particularly, for $d = order(B_\phi x + C_\phi y)$ due to the fact that $N$ is a group we have 
+				$$
+				\phi(dg) = 
+				\begin{pmatrix}
+					A_\phi & 0 \\ 
+					B_\phi & C_\phi   
+				\end{pmatrix}
+				\begin{pmatrix}
+					dx \\
+					dy
+				\end{pmatrix}
+				= \begin{pmatrix}
+					dA_\phi x \\ 
+					0
+				\end{pmatrix}.
+				$$
+				$\phi(dg) \in N$ and thus we can repeat the process: 
+				$$
+				\phi(\phi(dg)) = 
+				\begin{pmatrix}
+					A_\phi & 0 \\ 
+					B_\phi & C_\phi   
+				\end{pmatrix}
+				\begin{pmatrix}
+					x' \\
+					0
+				\end{pmatrix}
+				= \begin{pmatrix}
+					A_\phi x' \\ 
+					B_\phi x'
+				\end{pmatrix}.
+				$$
+				
+				or in other words $\langle \phi(dg)\rangle$ is a $\phi$-invariant subgroup of $N$ that is also subgroup of $Z_N$ which leads to step \ref{prop: N = Z_N}.
+			\end{enumerate} 
+		\end{proof}
+		
+		Finally, recall that from Theorem \ref{theorem: self-similar free abelian} $\phi_{Ker}$ is simple if and only if characteristic polynomial $A_2A_1^{-1} A_K A_K^{-1} = A_2A_1^{-1}$ isn't divisible by a monic polynomial with integral coefficients. This is the exact statement of the theorem, since $A_2A_1^{-1} = A_\phi$.
+	
+	
+	
+	2. If $G$ admits faithful self-replicating action, then there exists surjective virtual endomorphism $\phi : G \dashrightarrow G$. Consider a finite subgroup $F = 0^{n-k} \oplus \mathbb{Z}^k_p < G$ for some $p$ such that $k$ is maximal. Then, since $\phi$ is surjective and due to the block structure of $\phi$, we have $\phi^{-1}(F) = F$ and hence $F$ is a normal $\phi$-invariant subgroup of $G$.
+	\end{proof}
+	
+	\begin{corollary}
+		An arbitrary virtual endomorphism $\phi : G \dashrightarrow G$, which is given with (\ref{eq: matrix of abelian endomorphism}), is simple if and only if $A$ and every $A_{p_i}$ are simple. 
+	\end{corollary}
+	
+	\subsection{Self-replicating actions of crystallographic groups}
+	
+	Recall that from the Corollary \ref{cor: self-similar actions of cryst} we know that every crystallographic group admits self-similar action since it is finitely generated and virtually abelian. 
+	
+	
+	\begin{lemma} \label{equal_index}
+		Let $\Gamma = (G, L, \alpha)$ be a crystallographic group and $\Gamma_1 < \Gamma$ be an isomorphic subgroup. Then $\Gamma_1 = (G, L_1, \alpha)$, where $L_1 < L, L_1 \simeq L$ and $[\Gamma_1 : \Gamma] = [L_1 : L]$.
+	\end{lemma}
+	
+	\begin{proof}
+		
+		Since $\Gamma$ and $\Gamma_1$ are isomorphic, they both belong to the same crystal class, i.e. $\Gamma_1$ is a \textit{klassengleiche} subgroup, and therefore $\Pi(\Gamma) = \Pi(\Gamma_1) = G$. Since $\Gamma_1 < \Gamma, \alpha(\Gamma) = \alpha(\Gamma_1) = \alpha$.  Let $\phi : \Gamma_1 \rightarrow \Gamma$ be the respective isomorphism. By the Bieberbach theorem every isomorphism of crystallographic groups is in fact conjugation in $\mathbf{A}(n)$. Thus there exists $a = A_a + t_a \in \mathbf{A}(n)$ such that $\phi(g) = a^{-1} g a$. Without loss of generality consider $L = \mathbb{Z}^n$ by choosing basis for $G$ and $\alpha$ as the generators of $L$. 
+		Then for arbitrary $g \in L_1$:
+		\begin{equation} \label{eq: conjugation on translation}
+			\phi(g) = a^{-1}ga = (A_a^{-1} - A_a^{-1}t_a)(id + t_g)(A_a + t_a) = (id + A_a^{-1}t_g)	
+		\end{equation}
+		which means that the restriction $\phi' : L_1 \rightarrow L$ is in fact induced by $\phi'(g) = A^{-1}g$ for some matrix $A$ with integral entities and then $L_1 \simeq L$ as well as $[L : L_1] = |det(A)|$.
+		
+		Finally, $\Gamma_1 < \Gamma$ is given, $L < \Gamma$ and $L_1 < \Gamma_1$ , $L_1 = A_a L < \Gamma_1 < \Gamma$ since $\phi$ is an isomorphism and $L_1 < L < \Gamma$ due to the distributive property of $A^{-1}_a (t_g + t_f)$. Then 
+		$$
+		[\Gamma : L_1] = [\Gamma_1 : L_1][\Gamma : \Gamma_1] =
+		[L : L_1][\Gamma : L]
+		$$
+		which gives $[\Gamma : \Gamma_1] =[L : L_1]$.
+		
+	\end{proof}
+	
+	
+	\begin{theorem}	\label{theorem: cryst vs lattice}
+		Let $\Gamma$ be a crystallographic group given by $(G, L, \alpha)$ with a self-similar action $(\Gamma, X)$ and $\phi : \Gamma_1 \rightarrow \Gamma$ be the associative virtual endomorphism. Consider a restriction $\phi' : L_1 \rightarrow L$ of $\phi$ on $L_1 = \Gamma_1 \cap L$. Then $\phi'$ defines a self-similar action with the same alphabet $(L, X)$ and it is faithful if and only if $(\Gamma, X)$ is faithful.  
+	\end{theorem}
+	
+	
+	\begin{proof}
+		Due to the Lemma \ref{equal_index}, $[\Gamma : \Gamma_1] = [L : L_1]$ and therefore coset transversals $\Gamma / \Gamma_1$ and $ L / L_1$ have the same size as well as the alphabets of respective self-similar actions. Moreover, it means that $\Gamma / \Gamma_1$ is in fact the set of translations and we can pick $X = \Gamma / \Gamma_1 = L / L_1$. 
+		
+		$(\Leftarrow)$ is straightforward: if $(\Gamma, X)$ is faithful, then $\forall g \in \Gamma, g \neq e, \exists w \in X^*$ such that $g(w) \neq w$, which obviously holds for the case $g \in L < \Gamma$.
+		
+		$(\Rightarrow)$ $(L, X)$ is faithful. Recall the exact form of the $\phi$-core where for the case of crystallographic group $\phi(g) = a^{-1} g a$ for some $a = A + t \in \mathbf{A}(n)$: 
+		$$
+		K(\phi) = \bigcap_{n\ge1}\bigcap_{g \in \Gamma} g^{-1} \Dom \phi^n g = \bigcap_{n \ge 1}\bigcap_{g \in \Gamma} g^{-1} \phi^{-n}(\Gamma) g = \bigcap_{n \ge 1}\bigcap_{g \in \Gamma} g^{-1} a^n \Gamma a^{-n} g
+		$$ 
+		and $K(\phi)$ is the maximal normal $\phi$-invariant subgroup of $\Gamma$. In [] (Lemma 1.2) it is shown that crystallographic groups have no non-trivial finite normal subgroups. Moreover, every normal subgroup of a crystallographic group is as well crystallographic of non-greater dimension. 
+		
+		Therefore, there exists $k \le n$ such that $\mathbb{Z}^k \simeq L' \lhd K(\phi) \lhd \Gamma$. It is clear that there is no $x \in K(\phi)$ such that $x = id + t$ (i.e. $x$ is pure translation) since it follows that $x \in L$ and $x$ is $\phi$-invariant that contradicts with the assumption of triviality of $K(\phi')$.
+		
+		Consider $x \in K(\phi), \, x\neq e, \, x = A_x + t_x$. Then by picking $m=order(A_x)$ we have 
+		$$
+		x^m = id + (A^{m-1}_x t_x + A^{m-2}_x t_x + \dots + A_x t_x + t)
+		$$
+		which means that either $x^m = e$ or $x^m = id + t_{x^m}$. Since $L' \lhd G(\phi)$ and $L'$ is torsion free, we can choose $x \in L'$ and thus $x^m = id + t_{x^m}$ that is contradiction.
+	\end{proof}	
+	
+	
+	\begin{theorem} \label{theorem: cryst criterion}
+		An arbitrary crystallographic group $\Gamma$ that is given by $(G, \mathbb{Z}^n, \alpha)$ admits a self-replicating action if and only if 
+		there exists $a = A + t \in \mathbf{A}(n)$ where $A$ is a matrix with rational coefficients such that A has no eigenvalue that is algebraic integer and  $a^{-1} \Gamma a \subset \Gamma$. 
+	\end{theorem}
+	\begin{proof}
+		Due to the Bieberbach theorem $a^{-1} \Gamma a \sim \Gamma$ and thus we can construct surjective virtual endomorphism $\phi : a^{-1} \Gamma a \rightarrow \Gamma$ by the obvious rule 
+		$$
+		\phi(g) = a g a^{-1} \in \Gamma.
+		$$
+		From the Theorem \ref{theorem: cryst vs lattice} we know that the associative self-similar action is faithful if and only if the respective action on the lattice is faithful. For $g \in a^{-1}\Gamma a$  such that $g = id + t_g$ we have similarly to (\ref{eq: conjugation on translation}): 
+		$$
+		\phi(g) = id + At_g
+		$$
+		which, combining with Theorem \ref{theorem: self-similar free abelian} leads to $A$ having no eigenvalue that is algebraic integer. 
+			 
+	\end{proof}
+
+	\begin{corollary} \label{cor: self-replicating action for cryst}
+		Every crystallographic group $\Gamma$ admits a self-replicating action with $a=A+t$ being a scalar matrix $A$ with trivial translation.  
+	\end{corollary}
+
+	\begin{proof}
+		Since $A$ is scalar it obviously commutes with any matrix and thus lies in the normalizer of $\Pi(G)$. Recall that $G$ is given by a triplet $(G, L, \alpha)$, where $\alpha$ indicates the SNoT. To construct a self-replicating action, firstly we need to change the basis to the one that generates $L$. Particularly, having $L = \langle t_1, t_2, \dots t_n \rangle$ denote $\mathbf{L}$ as the matrix $[t_1, t_2, \dots t_n]$ and get new group $\Gamma' = \mathbf{L}^{-1}\Gamma\mathbf{L}$. By Bieberbach theorem $\Gamma' \sim \Gamma$, while $\Gamma' = (G', \mathbb{Z}^n, \alpha')$. From this follows, that the system of non-primitive translations consists of vectors with one or more rational coordinates. Hereafter assume we have $\Gamma = (G, \mathbb{Z}^n, \alpha)$.
+		
+		Consider $A = \dfrac{1}{m+1}E_n$ where $m = lcm \left(m_i : A_g + \dfrac{p}{m_i} \in \Gamma \right)$ is a least common multiplier of denominators of translations from the SNoT. Then $A$ has one eigenvalue $\lambda = \frac{1}{m}$ and the only thing we need to check is $a^{-1}\Gamma a \subset \Gamma$.
+		
+		Taking into account multiplication rule we get for every $g \in \Gamma$, $g = B + t$ an image 
+		$$
+		\phi(g) = a^{-1} g a = B + A^{-1}t = B + (m+1)t
+		$$
+		$$
+		\Rightarrow \phi(g) = (B + t) + mt
+		$$
+		where $mt \in \mathbb{Z}^n$, which leads to $\phi(g) \in \Gamma$.
+	\end{proof}
+	
+	Combining this result with the results of Bondarenko I. we can formulate the following theorem
+	\begin{theorem}
+		A virtually abelian group $G$ admits a self-replicating action if and only if $G$ is crystallographic.
+	\end{theorem}
+
+	\newpage
+	\section{Computational Experiments} \label{section:experiments}
+	Since crystallographic groups are objects of particular interest in physics and chemistry, there is a lot of decent computational environments to work with them. For example, the programs can be used to derive the classes of point groups, space groups, lattices (so called Bravais lattices) and crystall families; to calculate the subgroups of point groups and space groups, \textit{etc}. The mathematical program packages \href{https://www.gap-system.org/}{GAP} (Groups, Algorithms and Programming), in particular \href{https://www.gap-system.org/Packages/cryst.html}{\textit{CrystGap}} and \href{https://lbfm-rwth.github.io/carat/}{\textit{Carat}} (Crystallographic Algorithms and Tables) are perfect example. It is also convenient to use GAP interface directly from the \href{https://www.sagemath.org/}{Sage} environment. Other programs are provided by crystallographic server in Bilbao: \href{https://www.cryst.ehu.es/}{https://www.cryst.ehu.es/}.
+	
+	In this section we describe algorithm for searching simple virtual endomorphisms and constructing faithful self-similar actions of crystallographic groups.  
+	
+	\subsection{Algorithm details} Due to the Theorem \ref{theorem: cryst criterion} we need to have a virtual endomorphism $\phi: \Gamma_1 \rightarrow \Gamma$ that is also an isomorphism. 
+	For this purpose firstly we need to find the normalizer of the Point group in the $GL(n, \mathbb{Q})$. For crystallographic groups it is a common task to find a normalizer in $GL(n, \mathbb{Z})$, e.g. in \cite{cryst:international tables}, \cite{cryst:group_theory}. Moreover, Bilbao server \cite{cryts: online tool} can straightforwardly compute affine and euclidean normalizers for any space and wallpaper group. However, for our task it is not enough to have a normalizer in $GL(n, \mathbb{Z})$ and we need to extend it further.
+	
+	Consider any point group $G$. By definition, its normalizer $\mathcal{N}$ is the maximal subset of $GL(n, Q)$ that is 
+	$$
+	\mathcal{N}G = G\mathcal{N}.
+	$$
+	Thus, let $N = \begin{pmatrix}a & b \\ c & d \end{pmatrix}$. For every possible permutation $\pi \in Sym(G)$ we get a system of linear equations: 
+	\begin{equation} \label{eq:eq2}
+		Ng_i = g_{\pi(i)}N
+	\end{equation}
+	that can be solved using Gaussian elimination for example. Then, denoting the set of solutions as $\mathcal{N}_\pi$ we have
+	$$
+	\mathcal{N} = \bigcup_{\pi \in Sym(G)}\mathcal{N}_\pi.
+	$$
+	Fortunately, $G$ are small in the most cases, since for $|G| > 6$ this problem becomes computationally hard. We can reduce the computational space, applying the property that it is only needed to set generators to their destination. 
+	
+	As a result, currently we have the following API: 
+	
+	--------------------------------------------------------------------------------------------------------------------------------------
+	
+	\begin{itemize}
+		\item[def] \textbf{normalizers}\textit{(n, dim=2, verbose=False, use\_alphabet=False,
+		normalize\_exp=True, to\_matrix=True, ignore\_trivial=True)}:
+		
+		Find normalizer of the PointGroup in $GL(n, \mathbb{Q})$. Tries to find normalizer as a solution of system of linear equations $N*A_i = A_j*N$, where $A_i$ and $A_j$ are	two elements of the PointGroup with respect to a permutation. Since
+		Normalizer is a group N, that satisfies condition NA = AN,
+		we can check all the permutations of A and solve the respective system
+		of linear equations.
+		
+		Second version, fast. Exploits the fact, that instead of full permutation of
+		A we can just declare where to map generators of A.
+		
+		Parameters
+	
+		-----------------------
+	
+		\begin{itemize}
+			\item \textit{n} : int
+			
+			index of the Crystallographic group in the Gap CrystCat package
+			
+			\item \textit{dim} : int
+			
+			dimension of crystallographic group
+			
+			\item \textit{use\_alphabet} : bool
+			
+			if True, then symbolic matrices are created like
+			\begin{center}
+				[a, b] 
+				
+				[c, d]		
+			\end{center}
+			if False, then
+			\begin{center}
+				[$a_{00}$, $a_{01}$] 
+				
+				[$a_{10}$, $a_{11}$]
+			\end{center}
+		
+			\item \textit{normalize\_exp} : bool
+		
+			if True, then solution of the linear system will be
+			normalized, i.e. all the independed variables will be
+			renamed into $x_0$, $x_1$, $x_2$ ...
+			
+			\item \textit{to\_matrix} : bool
+		
+			if True, then the result solutions will be transformed
+			into symbolic matrices instead of tuple of Expressions
+			
+			\item \textit{verbose} : bool
+		
+			True to see the results on the fly.
+			
+			\item \textit{ignore\_trivial} : bool
+			if True then solutions with zero determinant will be ignored
+								
+		\end{itemize}
+		
+		Returns
+		
+		--------------------
+		
+		If `to\_matrix` is True, then list of symbolic matrices is returned.
+		Else, list of tuples of expressions like "$a_{00}$ == $x_1$" which denotes
+		what elements of matrix should be.
+		
+		\begin{lstlisting}[language=python]
+			>>> normalizers(3, verbose=True, use_alphabet=True)
+			====================================================
+			3 point group: Matrix group over Rational Field with 1 generators (
+			[-1  0]
+			[ 0  1]
+			)
+			group elements:
+			[1 0]
+			[0 1]
+			[-1  0]
+			[ 0  1]
+			
+			-----------normalizers-------------
+			[x0  0]
+			[ 0 x1]
+		\end{lstlisting}
+		
+		\vskip 1cm
+		 
+		
+		\item[def]  \textbf{self\_similar}\textit{(n, T, dim=2, verbose=False,
+		gen\_alphabet=False, safe=True, change\_basis=False, deep=4)}:
+		
+		Construct self-similar action for a crystallographic group
+		given element of affine group that is conjugation for virtual
+		endomorphism construction.
+		
+		
+		Parameters
+		
+		---------------
+		
+		
+		\begin{itemize}
+			\item \textit{n} : int
+			
+			a number of crystallographic group from the Gap package
+			
+			\item \textit{T} : matrix of dimension `dim` + 1
+			
+			an element of the affine group $A(dim)$ that can be represented as
+			$(M + t)$, where $M$ is a $dim \times dim$ matrix and t is a vector that represents
+			translation. Should be given in a matrix form, i.e. $(M + t)$ is a
+			block matrix:
+			$$
+			\left(\begin{array}{c|c}
+				M & t \\ 
+				\hline 
+				0 & 1
+			\end{array}\right)
+			$$
+			
+			\item \textit{dim} : int
+			
+			dimension of euclidean space, where we consider a crystallographic
+			group
+			
+			\item \textit{verbose} : bool
+			
+			True to show auxiliary messages
+			
+			\item \textit{gen\_alphabet }: bool
+			True to use alphabet for generators instead of $a_i$
+			
+			\item \textit{safe} : bool
+			
+			if True, then function raises error if $T$ doesn't generate
+			virtual endomorphism.
+			
+			\item \textit{deep}: int
+			specifies maximal length of the precomputed words of generators to
+			compute explicit formula of the self-similar action.
+									
+		\end{itemize}
+		
+		Returns
+		
+		--------------------
+		
+		dict $\{ (a, i): [j, b] \}$: a self-similar action
+		
+		\begin{lstlisting}[language=python]
+		>>> n = 2
+		...	T = matrix(QQ, [
+		...		[0, 1/2, 0], 
+		...		[1, 0, 0], 
+		...		[0, 0, 1]
+		...	])
+		...	print('=================================')
+		...	print(f"crystallographic group #{n}.")
+		...	print('a:')
+		...	print(T)
+		...	maps, names = self_similar(
+		...		n, T, dim=2, verbose=True, 
+		...		gen_alphabet=True, change_basis=False
+		...	)
+		...
+		============================================
+		crystallographic group #2.
+		a:
+		[  0 1/2   0]
+		[  1   0   0]
+		[  0   0   1]
+		============================================
+		
+		conjugate el:
+		[-1  0  0]
+		[ 0 -1  0]
+		[ 0  0  1]
+		conj in G: True
+		
+		conjugate el:
+		[1 0 0]
+		[0 1 2]
+		[0 0 1]
+		conj in G: True
+		
+		conjugate el:
+		[1 0 1]
+		[0 1 0]
+		[0 0 1]
+		conj in G: True
+		---------------------------------------
+		Index of subgroup H: 2
+		Transversal:
+		[1 0 0]
+		[0 1 0]
+		[0 0 1]
+		
+		[1 0 0]
+		[0 1 1]
+		[0 0 1]
+		>>> maps 
+		{('a', 1): (1, 'a'),
+			('a', 2): (2, 'a'),
+			('b', 1): (1, 'bc'),
+			('b', 2): (2, 'bc'),
+			('c', 1): (2, 'e'),
+			('c', 2): (1, 'e')}
+		\end{lstlisting}
+	\end{itemize}
+	
+	Some results of computations one can check in the Appendix. 	
+	
+	\newpage
+	
+	\section{Discussion and further research}
+		In the end, there should be some words of conclusion and further work. First of all, we explored finitely generated abelian groups and gave a criterion of simplicity of virtual endomorphisms. Similarly, we provided an algorithmic criterion to examine virtual endomorphisms, that is crucial for highly practical nature of crystallography. Unfortunately, it should be noted, that the achieved result is far less than expected. Crystallographic groups didn't seem to admit a  self-replicating action, as they eventually appeared to. That being said, Corollary \ref{cor: self-replicating action for cryst} is simultaneously an interesting result and the greatest disappointment. 
+		
+		To characterize every virtual endomorphism of any crystallographic group is too complex for the near future. Describe every self-replicating action of the minimal alphabet seems interesting, yet isn't as promising as it could be. On the other hand, it would be useful to have the explicit formula of self-replicating action of the minimal alphabet for any space group and wallpaper group. 
+		
+		For finitely generated abelian groups it would be interesting to extend the result of Theorem \ref{theorem: self-similar fintely generated} and give a constructive algorithm for checking simplicity of virtual endomorphisms of finite abelian groups.  
+		
+	\newpage 
+	
+	\begin{thebibliography}{9}
+		
+		
+		% -------------------------general algebra-------------------------
+		\bibitem{Algebra} S. Lang.
+		Algebra. Graduate Texts in Mathematics. Springer New York, 2005.	
+	
+		\bibitem{GeomAlgebra:Bondarenko}
+		Є.В. Бондаренко. Вступ до геометричної теорії груп: навчальний посібник – К.: ВПЦ
+		«Київський університет», 2013.
+		
+		\bibitem{abelian_endomorphisms}
+		Krylov, P., Mikhalev, A., Tuganbaev, Askar. (2002). Endomorphism Rings of Abelian Groups. Journal of Mathematical Sciences. 110. 10.1023/A:1015190932351. 
+		
+		% ------------------self-similar actions et al.------------------- 
+		\bibitem{Nekrashevych:self-similar} "Self-Similar Groups" Volodymyr Nekrashevych,
+		International University Bremen, School of Engineering and Sci-
+		ence, P.O. Box 750 561, 28725 Bremen, Germany
+		
+		\bibitem{Nekrashevych:virtual_endomorphisms} Nekrashevych, Volodymyr. (2002). Virtual endomorphisms of groups. Algebra and Discrete Mathematics. 2002. 
+		
+		\bibitem{Nekrashevych: 1/2-endomorphisms}
+		Volodymyr Nekrashevych and Said Sidki, Automorphisms of the binary tree: state-
+		closed subgroups and dynamics of 1/2-endomorphisms, Groups: Topological, Combinatorial and Arithmetic Aspects (T. W. Müller, ed.), LMS Lecture Notes Series, vol.
+		311, 2004, pp. 375–404.
+		
+		\bibitem{self-similar:free groups} Vorobets, Mariya $\&$ Vorobets, Yaroslav. (2006). On a series of finite automata defining free transformation groups. Groups, Geometry, and Dynamics. 4. 10.4171/GGD/87. 
+		
+		\bibitem{Auto}
+		R.I. Grigorchuk, V.V. Nekrashevich, V.I. Sushchanskiı, Automata, dynamical systems, and groups, Tr. Mat. Inst. Steklova 231 (2000) 134-214
+		(Din. Sist., Avtom. i Beskon. Gruppy).
+		
+		\bibitem{Grygorchuk:original} R. I. Grigorchuk, Burnside problem on periodic groups, Funktsional. Anal. i Prilozhen., 1980,
+		Volume 14, Issue 1, 53–54
+		
+		\bibitem{Grygorchuk:growth} R. I. Grigorchuk, Degrees of growth of finitely generated groups,and the theory of invariant means, Izv. Akad. Nauk SSSR Ser.Mat., 1984, Volume 48, Issue 5, 939–985
+		
+		\bibitem{nilpotent_kernel}
+		Adilson A. Berlatto, Said N. Sidki, Virtual endomorphisms of nilpotent groups. Groups Geom. Dyn. 1 (2007), no. 1, pp. 21–46, arXiv:math/0602131
+		
+				
+		% ----------------------------crystallography------------------------------
+		\bibitem{Cryst_and_math}
+		FARKAS, DANIEL R. “CRYSTALLOGRAPHIC GROUPS AND THEIR MATHEMATICS.” The Rocky Mountain Journal of Mathematics, vol. 11, no. 4, 1981, pp. 511–51. JSTOR, http://www.jstor.org/stable/44236620. Accessed 4 Jun. 2022.
+		
+		\bibitem{cryst:international tables} Hahn, Th \& Fuess, H \& Wondratschek, H \& Müller, U \& Shmueli, U \& Prince, E \& Authier, Andre \& Kopsky, Vojtech \& Litvin, D. \& Rossmann, M \& Arnold, Eddy \& Hall, S \& McMahon, B. (2006). International Tables for Crystallography, Vol. A, Space-Group Symmetry. 
+		
+		\bibitem{cryts: online tool} Aroyo, et. al. Zeitschrift fuer Kristallographie (2006), 221, 1, 15-27: https://www.cryst.ehu.es/cryst/get\_nor.html
+		
+		\bibitem{cryst:group_theory} Souvignier, Bernd. (2008). Group theory applied to crystallography. 
+		
+		\bibitem{cryst:geometry_of_cryst} Szczepański, Andrzej. (2012). Geometry of crystallographic groups. 	
+		
+		\bibitem{Bieberbach:Original}
+		Bieberbach, L.. "Über die Bewegungsgruppen der Euklidischen Räume. (Zweite Abhandlung.) Die Gruppen mit einem endlichen Fundamentalbereich." Mathematische Annalen 72 (1912): 400-412. http://eudml.org/doc/158577.
+		
+		
+	\end{thebibliography}
+	
+	\newpage
+	
+	\section{Appendix}
+	\subsection{Appendix A: Self-replicating actions of wallpaper groups}
+	
+	\begin{table}[H]
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			№ & \textbf{Generators} &  \textbf{$\phi$} & \textbf{|X|} & Self-replicating action \\
+			\hline 
+			
+			
+			1 & \multirow{2}{*}{$\left\langle 
+				\begin{pmatrix}
+					1 & 0 \\ 
+					0 & 1 
+				\end{pmatrix} 			
+				\right\rangle$
+			}
+			& \multirow{2}{*}{$\left(\begin{array}{cc|c}
+					0 & \frac{1}{2} & 0\\ 
+					1 & 0  & 0
+				\end{array}\right)$  
+			}
+			& \multirow{2}{*}{2} & $a = () (b, ab) $\\
+			
+			&  & & & $b = (12)(a, a)$      \\
+			
+			\multirow{3}{*}{2} & \multirow{3}{*}{$\left\langle 
+				\begin{pmatrix}
+					-1 & 0 \\ 
+					0 & -1 
+				\end{pmatrix} 			
+				\right\rangle$
+			}
+			& \multirow{3}{*}{$\left(\begin{array}{cc|c}
+					0 & \frac{1}{2}  & 0\\ 
+					1 & 0  & 0
+				\end{array}\right)$  
+			}
+			& \multirow{3}{*}{2} & $a = () (a, a)$\\
+			& & & & $b = ()(bc, bc)$\\
+			& & & & $c = (12)(e, e)$\\
+			
+			3 & $\left\langle 
+			\begin{pmatrix}
+				-1 & 0 \\ 
+				0 & 1 
+			\end{pmatrix} 			
+			\right\rangle$
+			
+			& -
+			& - & \\
+			
+			4 & $\left\langle 
+			\left(\begin{array}{cc|c}
+				-1 & 0  & 0 \\ 
+				0 & 1   & \frac{1}{2}
+			\end{array}\right) 			
+			\right\rangle$
+			
+			& -
+			& -  & \\	
+			
+			5 & $\left\langle 
+			\begin{pmatrix}
+				-1 & 0  \\ 
+				0 & 1  
+			\end{pmatrix}, 
+			\begin{pmatrix}
+				\frac{1}{2} \\ 
+				\frac{1}{2}  
+			\end{pmatrix}		
+			\right\rangle$
+			
+			& -
+			& - & \\	
+			
+			\multirow{4}{*}{6} & \multirow{4}{*}{$\left\langle 
+				\begin{pmatrix}
+					-1 & 0  \\ 
+					0 & -1  
+				\end{pmatrix},
+				\begin{pmatrix}
+					-1 & 0  \\ 
+					0 & 1  
+				\end{pmatrix}  	
+				\right\rangle$
+			}
+			& \multirow{4}{*}{$\left(\begin{array}{cc|c}
+					0 & \frac{1}{2}  & 0\\ 
+					1 & 0  & 0
+				\end{array}\right)$ } 
+			& \multirow{4}{*}{2} & $a = () (a, a)$ \\	
+			
+			& & & & $b = () (aaab, aaab)$\\
+			& & & & $c = () (cd, cd)$\\
+			& & & & $d = (1 2) (e, e)$\\
+			
+			
+			7 & $\left\langle 
+			\begin{pmatrix}
+				-1 & 0  \\ 
+				0 & -1  
+			\end{pmatrix}, 
+			\left(\begin{array}{cc|c}
+				-1 & 0 & \frac{1}{2} \\ 
+				0 & 1 & 0  
+			\end{array}\right)		
+			\right\rangle$
+			
+			& -
+			& - &\\	
+			
+			
+			\multirow{4}{*}{8} & \multirow{4}{*}{$\left\langle 
+				\begin{pmatrix}
+					-1 & 0  \\ 
+					0 & -1  
+				\end{pmatrix}, 
+				\begin{pmatrix}
+					\frac{1}{2} \\ 
+					\frac{1}{2}  
+				\end{pmatrix}		
+				\right\rangle$
+			}
+			& \multirow{4}{*}{$\left(\begin{array}{cc|c}
+					0 & \frac{1}{3}  & 0\\ 
+					1 & 0  & 0
+				\end{array}\right)$ }
+			& \multirow{4}{*}{3} &  $a = () (a, acd, a)$\\
+			
+			& & & & $b = (1 3) (aaba, aaba, aaba)$ \\
+			& & & & $c = (2 3) (cd, aabacd, aab^{-1}a)$ \\
+			& & & & $d = (1 2) (aaba, aaba, e)$ \\
+			
+			9	 & $\left\langle 
+			\begin{pmatrix}
+				-1 & 0  \\ 
+				0 & -1  
+			\end{pmatrix}, 
+			\begin{pmatrix}
+				-1 & 0  \\ 
+				0 & 1  
+			\end{pmatrix},
+			\begin{pmatrix}
+				\frac{1}{2} \\ 
+				\frac{1}{2}  
+			\end{pmatrix}		
+			\right\rangle$
+			
+			& $\left(\begin{array}{cc|c}
+				0 & \frac{1}{3}  & 0\\ 
+				1 & 0  & 0
+			\end{array}\right)$ 
+			& 3 &\\
+			
+			
+			10 & $\left\langle 
+			\begin{pmatrix}
+				-1 & 0  \\ 
+				0 & -1  
+			\end{pmatrix}, 
+			\begin{pmatrix}
+				0 & 1  \\ 
+				-1 & 0  
+			\end{pmatrix}
+			\right\rangle$
+			
+			& $\left(\begin{array}{cc|c}
+				1 & -1  & 0\\ 
+				1 & 1  & 0
+			\end{array}\right)$ 
+			& 2 &\\
+			
+			11 & $\left\langle 
+			\begin{pmatrix}
+				-1 & 0  \\ 
+				0 & -1  
+			\end{pmatrix}, 
+			\begin{pmatrix}
+				0 & 1  \\ 
+				-1 & 0  
+			\end{pmatrix}
+			\begin{pmatrix}
+				-1 & 0  \\ 
+				0 & 1  
+			\end{pmatrix}
+			\right\rangle$
+			
+			& $\left(\begin{array}{cc|c}
+				1 & -1  & 0\\ 
+				1 & 1  & 0
+			\end{array}\right)$ 
+			& 2 &\\
+			
+			
+			12 & $\left\langle 
+			\begin{pmatrix}
+				-1 & 0  \\ 
+				0 & -1  
+			\end{pmatrix}, 
+			\begin{pmatrix}
+				0 & 1  \\ 
+				-1 & 0  
+			\end{pmatrix}
+			\left(\begin{array}{cc|c}
+				-1 & 0 &  \frac{1}{2} \\ 
+				0 & 1  & \frac{1}{2}
+			\end{array}\right)
+			\right\rangle$
+			
+			& $\left(\begin{array}{cc|c}  
+				0 & -\frac{1}{3}  & 0\\ 
+				\frac{1}{3} & 0  & 0
+			\end{array}\right)$ 
+			& 9 &\\
+			
+			13 & $\left\langle 
+			\begin{pmatrix}
+				0 & 1 \\ 
+				-1 & -1 
+			\end{pmatrix} 			
+			\right\rangle$
+			
+			& $\left(\begin{array}{cc|c}  
+				1 & -1  & 0\\ 
+				1 & \frac{1}{2}   & 0
+			\end{array}\right)$  
+			
+			& 3 &\\
+			
+			
+			14 & $\left\langle 
+			\begin{pmatrix}
+				0 & 1 \\ 
+				-1 & -1 
+			\end{pmatrix}, 			
+			\begin{pmatrix}
+				0 & -1 \\ 
+				-1 & 0
+			\end{pmatrix}
+			\right\rangle$
+			
+			& $\left(\begin{array}{cc|c}  
+				\frac{1}{2} & \frac{1}{2}  & 0\\ 
+				-\frac{1}{2} & 0   & 0
+			\end{array}\right)$  
+			
+			& 4 &\\
+			
+			15 & $\left\langle 
+			\begin{pmatrix}
+				0 & 1 \\ 
+				-1 & -1 
+			\end{pmatrix}, 			
+			\begin{pmatrix}
+				0 & 1 \\ 
+				1 & 0
+			\end{pmatrix}
+			\right\rangle$
+			
+			& $\left(\begin{array}{cc|c}  
+				
+				\frac{1}{2} & \frac{1}{2}  & 0\\ 
+				-\frac{1}{2} & 0   & 0
+			\end{array}\right)$  
+			
+			& 4 &\\
+			
+			16 & $\left\langle 
+			\begin{pmatrix}
+				0 & 1 \\ 
+				-1 & -1 
+			\end{pmatrix}, 			
+			\begin{pmatrix}
+				-1 & 0 \\ 
+				0 & -1
+			\end{pmatrix}
+			\right\rangle$
+			
+			& $\left(\begin{array}{cc|c}  
+				1 & -1  & 0\\ 
+				1 & 2   & 0
+			\end{array}\right)$  
+			
+			& 3 &\\
+			
+			17 & $\left\langle 
+			\begin{pmatrix}
+				0 & 1 \\ 
+				-1 & -1 
+			\end{pmatrix}, 			
+			\begin{pmatrix}
+				-1 & 0 \\ 
+				0 & -1
+			\end{pmatrix},
+			\begin{pmatrix}
+				0 & -1 \\ 
+				-1 & 0
+			\end{pmatrix}
+			\right\rangle$
+			
+			& $\left(\begin{array}{cc|c}  
+				\frac{1}{2} & \frac{1}{2}  & 0\\ 
+				-\frac{1}{2} & 0   & 0
+			\end{array}\right)$  
+			
+			& 4 &\\
+			
+			\hline
+		\end{tabular}
+		
+		\caption{Some faithful self-replicating actions with minimal alphabet in the planar crystallographic groups, defined by the associated virtual endomorphism}
+		
+		\label{tab:self-similar}
+	\end{table}
+	
+	Some remarks relating to the table \ref{tab:self-similar}: column "generators" skips the default translations (those are $\begin{pmatrix}1 \\ 0\end{pmatrix}$ and $\begin{pmatrix}0 \\ 1\end{pmatrix}$); zero translations along with unitary matrices are skipped as well; $|X|$ means the size of the alphabet that is the transversal of $\Gamma / \phi(\Gamma)$; exact form of the self-similar actions is found in every case, although most of them are huge and ugly.  
+	
+	Next tables contain normalizers for every point group in $\mathbb{R}^2$ and for some in $\mathbb{R}^3$. They were constructed in automatic way using the aforementioned algorithm. 
+	
+	
+	\begin{table}[H]	
+		\begin{tabular}{|c|c|c|}
+			\hline
+			№ & Group & Normalizer \\ \hline
+			$16$ & $ \left\langle 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & -1 & 0 \\
+				0 & 0 & 1
+			\end{array}\right) , 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & 1 & 0 \\
+				0 & 0 & -1
+			\end{array}\right) , 
+			\right\rangle $ & $\left(\begin{array}{rrr}
+				0 & 0 & x_{1} \\
+				x_{2} & 0 & 0 \\
+				0 & x_{0} & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{1} & 0 \\
+				0 & 0 & x_{0} \\
+				x_{2} & 0 & 0
+			\end{array}\right)$ \\
+			$47$ & $ \left\langle 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & -1 & 0 \\
+				0 & 0 & 1
+			\end{array}\right) , 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & 1 & 0 \\
+				0 & 0 & -1
+			\end{array}\right) , 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & -1 & 0 \\
+				0 & 0 & -1
+			\end{array}\right) , 
+			\right\rangle $ & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & x_{2} \\
+				x_{1} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & 0 & x_{1} \\
+				x_{2} & 0 & 0 \\
+				0 & x_{0} & 0
+			\end{array}\right)$ \\
+			$195$ & $ \left\langle 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & -1 & 0 \\
+				0 & 0 & 1
+			\end{array}\right) , 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & 1 & 0 \\
+				0 & 0 & -1
+			\end{array}\right) , 
+			\left(\begin{array}{rrr}
+				0 & 0 & 1 \\
+				1 & 0 & 0 \\
+				0 & 1 & 0
+			\end{array}\right) , 
+			\right\rangle $ & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				x_{0} & 0 & 0 \\
+				0 & x_{0} & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & x_{0} \\
+				x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & -x_{0} \\
+				x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & x_{0} \\
+				-x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				x_{0} & 0 & 0 \\
+				0 & -x_{0} & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				-x_{0} & 0 & 0 \\
+				0 & x_{0} & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & -x_{0} \\
+				-x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				-x_{0} & 0 & 0 \\
+				0 & -x_{0} & 0
+			\end{array}\right)$ \\
+		\hline
+		\end{tabular}
+	\caption{Normalizers for some space groups of $\mathbb{R}^3$, particularly such that have irreducible characteristic polynomial. Groups 16, 47, 195}
+	\end{table}
+
+	\newpage
+	
+	\begin{table}[H]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		№ & Group & Normalizer \\ \hline
+		$200$ & $ \mathlarger\langle 
+		\left(\begin{array}{rrr}
+			-1 & 0 & 0 \\
+			0 & -1 & 0 \\
+			0 & 0 & 1
+		\end{array}\right) , 
+		\left(\begin{array}{rrr}
+			-1 & 0 & 0 \\
+			0 & 1 & 0 \\
+			0 & 0 & -1
+		\end{array}\right) , $ & $\left(\begin{array}{rrr}
+			0 & 0 & x_{0} \\
+			x_{0} & 0 & 0 \\
+			0 & x_{0} & 0
+		\end{array}\right)$ \\
+		&  $
+		\left(\begin{array}{rrr}
+			0 & 0 & 1 \\
+			1 & 0 & 0 \\
+			0 & 1 & 0
+		\end{array}\right) , 
+		\left(\begin{array}{rrr}
+			-1 & 0 & 0 \\
+			0 & -1 & 0 \\
+			0 & 0 & -1
+		\end{array}\right) , 
+		\large\rangle $ & $\left(\begin{array}{rrr}
+			0 & x_{0} & 0 \\
+			0 & 0 & x_{0} \\
+			x_{0} & 0 & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & x_{0} & 0 \\
+			0 & 0 & -x_{0} \\
+			x_{0} & 0 & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & x_{0} & 0 \\
+			0 & 0 & x_{0} \\
+			-x_{0} & 0 & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & 0 & x_{0} \\
+			x_{0} & 0 & 0 \\
+			0 & -x_{0} & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & 0 & x_{0} \\
+			-x_{0} & 0 & 0 \\
+			0 & x_{0} & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & x_{0} & 0 \\
+			0 & 0 & -x_{0} \\
+			-x_{0} & 0 & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & 0 & x_{0} \\
+			-x_{0} & 0 & 0 \\
+			0 & -x_{0} & 0
+		\end{array}\right)$ \\
+		$207$ & $ \langle 
+		\left(\begin{array}{rrr}
+			-1 & 0 & 0 \\
+			0 & -1 & 0 \\
+			0 & 0 & 1
+		\end{array}\right) , 
+		\left(\begin{array}{rrr}
+			-1 & 0 & 0 \\
+			0 & 1 & 0 \\
+			0 & 0 & -1
+		\end{array}\right) ,$ & $\left(\begin{array}{rrr}
+			0 & 0 & x_{0} \\
+			x_{0} & 0 & 0 \\
+			0 & x_{0} & 0
+		\end{array}\right)$ \\
+		& $ 
+		\left(\begin{array}{rrr}
+			0 & 0 & 1 \\
+			1 & 0 & 0 \\
+			0 & 1 & 0
+		\end{array}\right) , 
+		\left(\begin{array}{rrr}
+			0 & 1 & 0 \\
+			1 & 0 & 0 \\
+			0 & 0 & -1
+		\end{array}\right) , 
+		\rangle$ & $\left(\begin{array}{rrr}
+			0 & x_{0} & 0 \\
+			0 & 0 & x_{0} \\
+			x_{0} & 0 & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & x_{0} & 0 \\
+			0 & 0 & -x_{0} \\
+			x_{0} & 0 & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & x_{0} & 0 \\
+			0 & 0 & x_{0} \\
+			-x_{0} & 0 & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & 0 & x_{0} \\
+			x_{0} & 0 & 0 \\
+			0 & -x_{0} & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & 0 & x_{0} \\
+			-x_{0} & 0 & 0 \\
+			0 & x_{0} & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & x_{0} & 0 \\
+			0 & 0 & -x_{0} \\
+			-x_{0} & 0 & 0
+		\end{array}\right)$ \\
+		&  & $\left(\begin{array}{rrr}
+			0 & 0 & x_{0} \\
+			-x_{0} & 0 & 0 \\
+			0 & -x_{0} & 0
+		\end{array}\right)$ \\
+		\hline
+		
+	\end{tabular}
+	\caption{Normalizers for some space groups of $\mathbb{R}^3$, particularly such that have irreducible characteristic polynomial. Groups 200, 207}
+	\end{table}
+
+	
+	\newpage
+	
+	
+	\begin{table}[H]
+		\begin{tabular}{|c|c|c|}
+			\hline
+			№ & Group & Normalizer \\ \hline
+			$215$ & $ \langle 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & -1 & 0 \\
+				0 & 0 & 1
+			\end{array}\right) , 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & 1 & 0 \\
+				0 & 0 & -1
+			\end{array}\right) , 
+			$ & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				x_{0} & 0 & 0 \\
+				0 & x_{0} & 0
+			\end{array}\right)$ \\
+			& $\left(\begin{array}{rrr}
+				0 & 0 & 1 \\
+				1 & 0 & 0 \\
+				0 & 1 & 0
+			\end{array}\right) , 
+			\left(\begin{array}{rrr}
+				0 & 1 & 0 \\
+				1 & 0 & 0 \\
+				0 & 0 & 1
+			\end{array}\right) , 
+			\rangle $ & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & x_{0} \\
+				x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & -x_{0} \\
+				x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & x_{0} \\
+				-x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				x_{0} & 0 & 0 \\
+				0 & -x_{0} & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				-x_{0} & 0 & 0 \\
+				0 & x_{0} & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & -x_{0} \\
+				-x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				-x_{0} & 0 & 0 \\
+				0 & -x_{0} & 0
+			\end{array}\right)$ \\
+			$221$ & $ \langle 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & -1 & 0 \\
+				0 & 0 & 1
+			\end{array}\right) , 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & 1 & 0 \\
+				0 & 0 & -1
+			\end{array}\right) , 
+			\left(\begin{array}{rrr}
+				0 & 0 & 1 \\
+				1 & 0 & 0 \\
+				0 & 1 & 0
+			\end{array}\right) , 
+			\rangle $ & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				x_{0} & 0 & 0 \\
+				0 & x_{0} & 0
+			\end{array}\right)$ \\
+			&  $
+			\left(\begin{array}{rrr}
+				0 & 1 & 0 \\
+				1 & 0 & 0 \\
+				0 & 0 & -1
+			\end{array}\right) , 
+			\left(\begin{array}{rrr}
+				-1 & 0 & 0 \\
+				0 & -1 & 0 \\
+				0 & 0 & -1
+			\end{array}\right) , $ & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & x_{0} \\
+				x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & -x_{0} \\
+				x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & x_{0} \\
+				-x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				x_{0} & 0 & 0 \\
+				0 & -x_{0} & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				-x_{0} & 0 & 0 \\
+				0 & x_{0} & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & x_{0} & 0 \\
+				0 & 0 & -x_{0} \\
+				-x_{0} & 0 & 0
+			\end{array}\right)$ \\
+			&  & $\left(\begin{array}{rrr}
+				0 & 0 & x_{0} \\
+				-x_{0} & 0 & 0 \\
+				0 & -x_{0} & 0
+			\end{array}\right)$ \\
+		\hline
+		\end{tabular}
+		\caption{Normalizers for some space groups of $\mathbb{R}^3$, particularly such that have irreducible characteristic polynomial. Groups 215, 221}
+	\end{table}
+	
+	\newpage
+	
+	\begin{table}[H]
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{№} & \textbf{Group} & \textbf{Normalizer} & \textbf{Determinant} \\ \hline
+		$3$ & $ \left\langle 
+		\left(\begin{array}{rr}
+			-1 & 0 \\
+			0 & 1
+		\end{array}\right) , 
+		\right\rangle $ & $\left(\begin{array}{rr}
+			x_{1} & 0 \\
+			0 & x_{0}
+		\end{array}\right)$ & $x_{0} x_{1}$ \\
+		$6$ & $ \left\langle 
+		\left(\begin{array}{rr}
+			-1 & 0 \\
+			0 & -1
+		\end{array}\right) , 
+		\left(\begin{array}{rr}
+			-1 & 0 \\
+			0 & 1
+		\end{array}\right) , 
+		\right\rangle $ & $\left(\begin{array}{rr}
+			x_{0} & 0 \\
+			0 & 0
+		\end{array}\right)$ & $0$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & x_{0} \\
+			0 & 0
+		\end{array}\right)$ & $0$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & 0 \\
+			0 & x_{1}
+		\end{array}\right)$ & $x_{0} x_{1}$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & x_{0} \\
+			x_{1} & 0
+		\end{array}\right)$ & $-x_{0} x_{1}$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & 0 \\
+			0 & x_{0}
+		\end{array}\right)$ & $0$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & 0 \\
+			x_{0} & 0
+		\end{array}\right)$ & $0$ \\
+		$10$ & $ \left\langle 
+		\left(\begin{array}{rr}
+			-1 & 0 \\
+			0 & -1
+		\end{array}\right) , 
+		\left(\begin{array}{rr}
+			0 & -1 \\
+			1 & 0
+		\end{array}\right) , 
+		\right\rangle $ & $\left(\begin{array}{rr}
+			-x_{0} & x_{1} \\
+			x_{1} & x_{0}
+		\end{array}\right)$ & $-x_{0}^{2} - x_{1}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & -x_{1} \\
+			x_{1} & x_{0}
+		\end{array}\right)$ & $x_{0}^{2} + x_{1}^{2}$ \\
+		$11$ & $ \left\langle 
+		\left(\begin{array}{rr}
+			-1 & 0 \\
+			0 & -1
+		\end{array}\right) , 
+		\left(\begin{array}{rr}
+			0 & -1 \\
+			1 & 0
+		\end{array}\right) , 
+		\left(\begin{array}{rr}
+			-1 & 0 \\
+			0 & 1
+		\end{array}\right) , 
+		\right\rangle $ & $\left(\begin{array}{rr}
+			x_{0} & 0 \\
+			0 & x_{0}
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & x_{0} \\
+			x_{0} & x_{0}
+		\end{array}\right)$ & $-2 \, x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & -x_{0} \\
+			x_{0} & x_{0}
+		\end{array}\right)$ & $2 \, x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & x_{0} \\
+			x_{0} & 0
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & 0 \\
+			0 & x_{0}
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & x_{0} \\
+			-x_{0} & x_{0}
+		\end{array}\right)$ & $2 \, x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & -x_{0} \\
+			-x_{0} & x_{0}
+		\end{array}\right)$ & $-2 \, x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & x_{0} \\
+			-x_{0} & 0
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		$13$ & $ \left\langle 
+		\left(\begin{array}{rr}
+			0 & -1 \\
+			1 & -1
+		\end{array}\right) , 
+		\right\rangle $ & $\left(\begin{array}{rr}
+			-x_{0} + x_{1} & -x_{0} \\
+			x_{0} & x_{1}
+		\end{array}\right)$ & $x_{0}^{2} - {\left(x_{0} - x_{1}\right)} x_{1}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & -x_{0} + x_{1} \\
+			x_{1} & x_{0}
+		\end{array}\right)$ & $-x_{0}^{2} + {\left(x_{0} - x_{1}\right)} x_{1}$ \\
+		\hline
+	\end{tabular}
+	\caption{Normalizers of crystallographic group of $\mathbb{R}^2$. Groups 3-13}
+	\end{table}
+	
+	\newpage
+	
+	\begin{table}[H]
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{№} & \textbf{Group} & \textbf{Normalizer} & \textbf{Determinant} \\ \hline
+		$14$ & $ \left\langle 
+		\left(\begin{array}{rr}
+			0 & -1 \\
+			1 & -1
+		\end{array}\right) , 
+		\left(\begin{array}{rr}
+			0 & -1 \\
+			-1 & 0
+		\end{array}\right) , 
+		\right\rangle $ & $\left(\begin{array}{rr}
+			x_{0} & x_{0} \\
+			-x_{0} & 0
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & x_{0} \\
+			x_{0} & 0
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & x_{0} \\
+			0 & -x_{0}
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & 0 \\
+			x_{0} & x_{0}
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & -x_{0} \\
+			x_{0} & x_{0}
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & 0 \\
+			0 & x_{0}
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		$15$ & $ \left\langle 
+		\left(\begin{array}{rr}
+			0 & -1 \\
+			1 & -1
+		\end{array}\right) , 
+		\left(\begin{array}{rr}
+			0 & 1 \\
+			1 & 0
+		\end{array}\right) , 
+		\right\rangle $ & $\left(\begin{array}{rr}
+			x_{0} & x_{0} \\
+			-x_{0} & 0
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & x_{0} \\
+			x_{0} & 0
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & x_{0} \\
+			0 & -x_{0}
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & 0 \\
+			x_{0} & x_{0}
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & -x_{0} \\
+			x_{0} & x_{0}
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & 0 \\
+			0 & x_{0}
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		$16$ & $ \left\langle 
+		\left(\begin{array}{rr}
+			0 & -1 \\
+			1 & -1
+		\end{array}\right) , 
+		\left(\begin{array}{rr}
+			-1 & 0 \\
+			0 & -1
+		\end{array}\right) , 
+		\right\rangle $ & $\left(\begin{array}{rr}
+			-x_{0} & -x_{0} + x_{1} \\
+			x_{1} & x_{0}
+		\end{array}\right)$ & $-x_{0}^{2} + {\left(x_{0} - x_{1}\right)} x_{1}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} - x_{1} & -x_{1} \\
+			x_{1} & x_{0}
+		\end{array}\right)$ & ${\left(x_{0} - x_{1}\right)} x_{0} + x_{1}^{2}$ \\
+		$17$ & $ \left\langle 
+		\left(\begin{array}{rr}
+			0 & -1 \\
+			1 & -1
+		\end{array}\right) , 
+		\left(\begin{array}{rr}
+			-1 & 0 \\
+			0 & -1
+		\end{array}\right) , 
+		\left(\begin{array}{rr}
+			0 & -1 \\
+			-1 & 0
+		\end{array}\right) , 
+		\right\rangle $ & $\left(\begin{array}{rr}
+			x_{0} & x_{0} \\
+			-x_{0} & 0
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & x_{0} \\
+			x_{0} & 0
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & \frac{1}{2} \, x_{0} \\
+			-\frac{1}{2} \, x_{0} & \frac{1}{2} \, x_{0}
+		\end{array}\right)$ & $\frac{3}{4} \, x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & 0 \\
+			x_{0} & x_{0}
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & -x_{0} \\
+			0 & x_{0}
+		\end{array}\right)$ & $-x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			\frac{1}{2} \, x_{0} & -\frac{1}{2} \, x_{0} \\
+			\frac{1}{2} \, x_{0} & x_{0}
+		\end{array}\right)$ & $\frac{3}{4} \, x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & -2 \, x_{0} \\
+			2 \, x_{0} & x_{0}
+		\end{array}\right)$ & $3 \, x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			0 & -x_{0} \\
+			x_{0} & x_{0}
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & \frac{1}{2} \, x_{0} \\
+			-\frac{1}{2} \, x_{0} & -x_{0}
+		\end{array}\right)$ & $-\frac{3}{4} \, x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & -2 \, x_{0} \\
+			-x_{0} & x_{0}
+		\end{array}\right)$ & $-3 \, x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			x_{0} & 0 \\
+			0 & x_{0}
+		\end{array}\right)$ & $x_{0}^{2}$ \\
+		&  & $\left(\begin{array}{rr}
+			-x_{0} & x_{0} \\
+			2 \, x_{0} & x_{0}
+		\end{array}\right)$ & $-3 \, x_{0}^{2}$ \\
+		\hline
+	\end{tabular}
+	\caption{Normalizers of crystallographic group of $\mathbb{R}^2$. Groups 14-17}
+	\end{table}
+	
+\end{document}

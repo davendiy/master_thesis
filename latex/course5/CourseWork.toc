@@ -1,0 +1,15 @@
+\babel@toc {english}{}
+\contentsline {section}{\tocsection {}{1}{Introduction}}{2}{section.1}%
+\contentsline {section}{\tocsection {}{2}{Prerequisites}}{2}{section.2}%
+\contentsline {subsection}{\tocsubsection {}{2.1}{Rooted trees}}{2}{subsection.2.1}%
+\contentsline {subsection}{\tocsubsection {}{2.2}{Groups actions}}{2}{subsection.2.2}%
+\contentsline {subsection}{\tocsubsection {}{2.3}{Automata}}{3}{subsection.2.3}%
+\contentsline {subsection}{\tocsubsection {}{2.4}{Self-similar actions}}{3}{subsection.2.4}%
+\contentsline {subsection}{\tocsubsection {}{2.5}{Crystallographic groups}}{4}{subsection.2.5}%
+\contentsline {section}{\tocsection {}{3}{Problem}}{6}{section.3}%
+\contentsline {subsection}{\tocsubsection {}{3.1}{Self-similar actions of $\mathbb {Z}^n$}}{6}{subsection.3.1}%
+\contentsline {subsection}{\tocsubsection {}{3.2}{Crystallographic case}}{6}{subsection.3.2}%
+\contentsline {section}{\tocsection {}{4}{Experiments}}{8}{section.4}%
+\contentsline {section}{\tocsection {}{5}{Further research}}{9}{section.5}%
+\contentsline {section}{\tocsection {}{}{References}}{10}{section*.2}%
+\contentsline {section}{\tocsection {}{6}{Appendix}}{11}{section.6}%

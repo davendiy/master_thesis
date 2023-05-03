@@ -1,0 +1,9 @@
+\babel@toc {ukrainian}{}
+\beamer@sectionintoc {1}{Theoretical background}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Self-similar actions}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Virtual endomorphisms}{6}{0}{1}
+\beamer@sectionintoc {2}{Main results}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Self-similar actions of free abelian groups}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Self-similar actions of finitely generated abelian groups}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{Self-replicating actions of crystallographic groups}{11}{0}{2}
+\beamer@sectionintoc {3}{Computational experiments}{12}{0}{3}

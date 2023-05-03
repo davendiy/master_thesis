@@ -1,0 +1,403 @@
+\documentclass[notheorems,handout,san serif,hyperref={unicode}]{beamer} %  ,hyperref={bookmarks=false} ,handout
+\usepackage{etex}
+\usepackage{graphicx,epsfig,picinpar}
+\usepackage{epstopdf}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc} %\usepackage[cp1251]{inputenc}
+\usepackage[ukrainian]{babel}
+\usepackage{wrapfig}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[mathscr]{eucal}
+\usepackage{multicol}
+%\usepackage{graphicx,epsfig,psfrag}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{math,trees}
+\usetikzlibrary{shapes}
+\usetikzlibrary{positioning,automata}
+\usetikzlibrary{arrows,calc}
+\usetikzlibrary{decorations.markings}
+
+%\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{bookmark}
+
+%\usepackage{bbm}
+%\usepackage{pgfplots}
+%\pgfplotsset{compat=newest,
+	%colormap={mycolormap}{color=(white) color=(white) color=(white)}
+	%}
+%\hypersetup{bookmarksopen=true,bookmarksopenlevel=3}
+
+%\usepackage[usenames]{color}
+%\setbeamercolor{section in toc}{fg=darkblue}
+%\setbeamercolor{frametitle}{fg=darkblue}
+
+
+
+% links
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=cyan,
+}
+
+
+
+\definecolor{red}{rgb}{1,0.00,0.00}
+\definecolor{blue}{rgb}{0,0.08,0.55}
+\definecolor{green}{rgb}{0,0.55,0.08}
+\definecolor{grey}{rgb}{0.87,0.87,0.87}
+\definecolor{white}{rgb}{1,1,1}
+\newcommand{\red}[1]{\textcolor{red}{\textbf{#1}}}
+\newcommand{\green}[1]{\textcolor{green}{\textbf{#1}}}
+\newcommand{\blue}[1]{\textcolor{blue}{\textbf{#1}}}
+\newcommand{\white}[1]{\textcolor{white}{#1}}
+
+
+\newcommand{\Dom}{\text{Dom }}
+\newcommand{\Ker}{\text{Ker }}
+\newcommand{\Imag}{\text{Im }}
+\newcommand{\End}{\text{End}}
+\newcommand{\Hom}{\text{Hom}}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corrolary}
+\newtheorem{question}{Question}
+
+%\newtheorem{lemma}{Лема}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{remark}{Remark}[section]
+
+
+
+
+\title{\Large\textbf{Self-similar actions of virtually abelian groups}\vspace{-0.5cm}}
+\author{Зашкольний Давид Олександрович\vspace{-0.7cm}}
+\date{26 квітня 2023 р.}
+
+\newenvironment{changemargin}[2]{%
+	\begin{list}{}{%
+			\setlength{\topsep}{0pt}%
+			\setlength{\leftmargin}{#1}%
+			\setlength{\rightmargin}{#2}%
+			\setlength{\listparindent}{\parindent}%
+			\setlength{\itemindent}{\parindent}%
+			\setlength{\parsep}{\parskip}%
+		}%
+		\item[]}{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Customize theorem and proof   %%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\setbeamertemplate{theorem begin}{%
+	%  \begin{\inserttheoremblockenv}% removed
+		{%
+			\textcolor{blue}{\textbf{\inserttheoremname}.}
+			\ifx\inserttheoremaddition\@empty\else\ (\inserttheoremaddition)\fi%
+			%    \space% new
+		}%
+	}
+	
+	\setbeamertemplate{theorem end}{}
+	
+	\setbeamertemplate{proof begin}{%
+		%  \begin{\inserttheoremblockenv}% removed
+			{%
+				\vspace{0.1cm}\textcolor{blue}{\textbf{Дов}.}
+			}%
+		}
+		\setbeamertemplate{proof end}{}
+		
+		\makeatother
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Customize header and footer   %%%%%%%%%%%%%%%%%%%%%%%%%%
+		\definecolor{headercolor}{RGB}{0,0,128}
+		\definecolor{headertextcolor}{RGB}{200,200,200}
+		\definecolor{headercolor2}{RGB}{235,235,255}
+		\definecolor{headertextcolor2}{RGB}{0,0,128}
+		\setbeamercolor{headerlinecolor}{fg=headertextcolor,bg=headertextcolor2}
+		\setbeamercolor{headerlinecolor2}{fg=headertextcolor2,bg=headercolor2}
+		\setbeamertemplate{headline}{
+			\leavevmode%
+			\hbox{%
+				\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{headerlinecolor}%
+					{\hspace{0.5cm}  \insertsection\hfill}   %\parbox{\linewidth}{ текст }
+				\end{beamercolorbox}%
+				\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{headerlinecolor2}%
+					{\hfill {Self-similar actions of virtually abelian groups } \hspace{0.5cm}  }
+			\end{beamercolorbox}}%
+			\vskip0pt%
+		}
+	
+
+\AtBeginSection[]{
+	\begin{frame}
+		\vfill
+		\centering
+		\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+			\usebeamerfont{title}\insertsectionhead\par%
+		\end{beamercolorbox}
+		\vfill
+	\end{frame}
+}	
+
+
+\makeatother
+\setbeamertemplate{footline}{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{headerlinecolor}%
+			{\hspace{0.5cm}  Зашкольний Д.О. \hfill } %\usebeamerfont{author in head/foot}
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{headerlinecolor2}%
+			\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+	\end{beamercolorbox}}%
+	\vskip0pt%
+}
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+	Науковий керівник: Бондаренко Євген Володимирович
+\end{frame}
+
+\begin{frame}
+	\frametitle{Contents}
+	\tableofcontents
+\end{frame}
+
+\section{Theoretical background}
+
+
+
+\subsection{Self-similar actions}
+
+\begin{frame}
+	\frametitle{Prerequisites. Self-similar actions}
+	
+		
+	\begin{definition}
+		Let $X$ be a finite alphabet. A faithful action of a group $G$ on the set $X^{*}$ is called \textit{self-similar} if for every $g\in G$ and $x\in X$ there exist $y\in X$ and $h\in G$ such that
+		$g(xw)=yh(w)$ for all $w\in X^{*}$.
+		
+		Usually a short notation is used, that originates from another definition using automata: 
+		\begin{equation} \label{eq:self-similar definition}
+			g \cdot x = y \cdot h	
+		\end{equation}
+		where $h$ is also noted as $g|_x$ and called a \textit{restriction} of $g$ on $x$.
+	\end{definition}
+
+	\vskip 1cm
+	
+	\begin{proposition} \label{self-similar:subgroup}
+		Let $H$ be a subgroup of finite index in the group $G$. If $H$ admits a self-similar action, then $G$ admits a self-similar action.
+	\end{proposition}
+	
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Problem}
+	
+	
+	\begin{corollary} \label{cor: self-similar actions of cryst}
+		Every finitely generated virtually abelian group admits a self-similar action. In particular, every crystallographic group admits a self-similar action.
+	\end{corollary}
+	
+	\vskip 2cm
+	
+	\begin{question}
+		Can we \textbf{describe} every self-similar action of finitely generated virtually abelian groups?
+	\end{question}
+	
+\end{frame}
+
+
+
+\subsection{Virtual endomorphisms}
+
+\begin{frame}
+	\frametitle{Prerequisites. Virtual endomorphisms}
+	
+	\begin{definition}
+		A \textit{virtual homomorphism} $\phi: G_1 \dashrightarrow G_2$ is a homomorphism of groups $\phi: \Dom \phi \rightarrow G_2$, where $\Dom \phi < G_1$ is a subgroup of finite index called the \textit{domain} of the virtual homomorphism. 
+	\end{definition}
+		
+	\begin{proposition}
+		The subgroup $K(\phi)$, also known as \textbf{$\phi$-core}, that is defined as  
+		$$
+		K(\phi) = \bigcap_{n\ge1}\bigcap_{g \in G} g^{-1} \Dom \phi^n g
+		$$
+		is the maximal one among the \textbf{normal $\phi$-invariant subgroups} of $G$.
+	\end{proposition}
+	
+	
+	\begin{definition}
+		A virtual endomorphism $\phi$ is said to be \textit{simple} if it's core is trivial, or in other words $K(\phi) = \{e\}$.
+		
+	\end{definition}
+\end{frame}
+
+
+\begin{frame}
+	
+	\frametitle{Prerequisites. Associative virtual endomorphism}
+	
+	\begin{definition}
+		
+		The map $\phi_x : G \dashrightarrow G$ defined by the condition
+		$$
+		g \cdot x = x \cdot \phi_x (g)
+		$$ 
+		is called \textit{associative virtual endomorphism} of self-similar action $(G, X^*)$.
+	\end{definition}
+	
+	\vskip 1cm
+	
+	\begin{proposition}
+		Let $(G, X^*)$ be a self-similar action of a group $G$ with an arbitrary associative virtual endomorphism $\phi$. 
+		
+		\begin{enumerate}
+			\item If $N$ is a normal subgroup of G, and $N$ is $\phi$-invariant, then $N$ is contained in the kernel of the self-similar action.
+			
+			\item \textbf{The kernel of self-similar action is equal to the $\phi$-core}.
+		\end{enumerate} 
+		
+	\end{proposition}
+\end{frame}
+
+
+
+
+
+\section{Main results}
+
+\subsection{Self-similar actions of free abelian groups}
+
+\begin{frame}
+	\frametitle{Main results. Free abelian groups}
+	
+	\begin{theorem}\quad
+		
+		\begin{enumerate}
+			
+			\item There is a correspondence between virtual endomorphisms $\phi : \mathbb{Z}^n \dashrightarrow \mathbb{Z}^n$ and pairs of integral $n\times n$ matrices $(A_1, A_2)$ such that $\det(A_1) \neq 0$, given by the rule:
+			$$
+			\pi = (A_1, A_2) \mapsto  \phi_{\pi}: A_1(\mathbb{Z}^n) \rightarrow \mathbb{Z}^n, \quad \phi_\pi (g) = A_2 A_1^{-1} g
+			$$
+			and two pairs $(A_1, A_2)$ and $(B_1, B_2)$ represent the same $\phi$ if and only if there exists an integral matrix $P$ with $|\det(P)|$ such that $B_1 = A_1 P, \, B_2 = A_2 P$.
+			
+			\item \label{criterion:free} The $\phi_\pi$ has trivial core if and only if $A = A_2A^{-1}_1$ is invertible and its characteristic polynomial is not divisible by a monic polynomial with integral coefficients. 
+			
+			
+			\item The $\phi_\pi$ is surjective iff $|\det(A_2)| = 1$. 
+			
+		\end{enumerate}
+	\end{theorem}
+\end{frame}
+
+
+\subsection{Self-similar actions of finitely generated abelian groups}
+
+
+\begin{frame}
+	\frametitle{Main results. Finitely generated abelian groups}
+	Every finitely generated abelian group $G$ decomposes into a direct sum $G = \mathbb{Z}^n \oplus F$, where $F$ is a finite abelian group. Virtual endomorphisms consist of triplets: 
+	\begin{equation} \label{eq:general form of virt_end of finit-gen abelian}
+		\phi = \begin{pmatrix}
+			A_\phi & 0 \\ 
+			B_\phi & C_\phi \\
+		\end{pmatrix}
+	\end{equation} 
+	where $A_\phi \in GL(n, \mathbb{Z})$, $B_\phi \in \Hom(\mathbb{Z}^n, F)$ and $C_\phi$ is a virtual endomorphism on $F$. 
+	
+	
+	\begin{theorem}\label{theorem: self-similar fintely generated}
+		Let $\phi : G \dashrightarrow G$ be a virtual endomorphism  of the finitely generated abelian group $G = \mathbb{Z}^n \oplus F$. 
+		
+		\begin{enumerate}
+			\item $\phi$ is simple if and only if $A_\phi$ has no eigenvalue that is algebraic integer and $C_\phi$ is simple as virtual endomorphism on $F$.
+			
+			\item If $\phi$ is surjective and simple, then $G$ is free abelian.
+		\end{enumerate}
+		
+	\end{theorem}
+
+\end{frame}
+
+\subsection{Self-replicating actions of crystallographic groups}
+
+\begin{frame}
+	\frametitle{Main results. Crystallographic groups}
+	\begin{definition}
+		A \textit{crystallographic group} of dimension $n$ is a cocompact discrete subgroup in $\mathbf{E}(n)$.
+	\end{definition}
+	
+	
+	\begin{theorem} \label{theorem: cryst criterion}
+		An arbitrary crystallographic group $\Gamma$ that is given by $(G, \mathbb{Z}^n, \alpha)$ admits a self-replicating action if and only if 
+		there exists $a = A + t \in \mathbf{A}(n)$ where $A$ is a matrix with rational coefficients such that A has no eigenvalue that is algebraic integer and  $a^{-1} \Gamma a \subset \Gamma$. 
+	\end{theorem}
+	
+	\vskip 0.5cm
+		
+	\begin{corollary} \label{cor: self-replicating action for cryst}
+		Every crystallographic group $\Gamma$ admits a self-replicating action with $a=A+t$ being a scalar matrix $A$ with trivial translation.  
+	\end{corollary}
+	
+	\vskip 0.5cm
+	
+	
+	Combining this result with the results of Bondarenko I. we can formulate the following theorem.
+	\begin{theorem}
+		A virtually abelian group $G$ admits a self-replicating action if and only if $G$ is crystallographic.
+	\end{theorem}
+	
+	
+\end{frame}
+
+
+\section{Computational experiments}
+
+\begin{frame}
+	\frametitle{Computational experiments}
+	
+	We developed some software to work with self-similar actions of crystallographic groups, since they are objects of practical interest. All the needed code one can find on the GitHub repository: \href{https://github.com/davendiy/master_thesis}{https://github.com/davendiy/master\_thesis}. 
+	
+	Particularly,
+	
+	\begin{enumerate}
+		\item an algorithm to find the normalizer of a  point group;
+		\item an algorithm to build a self-similar action by an arbitrary conjugation in the Affine group and the respective crystallographic group of any dimension; 
+		
+		\item results of brute-force search of faithful self-similar actions for wallpaper groups and space groups, with alphabet of the minimal possible size.
+		
+	\end{enumerate}
+	
+\end{frame}
+
+\begin{frame}
+	\vfill
+	\centering
+	\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+		\usebeamerfont{title} Thank you for attention!
+	\end{beamercolorbox}
+	\vfill
+\end{frame}
+
+
+\end{document}
+
+
