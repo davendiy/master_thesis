@@ -78,7 +78,7 @@
 \graphicspath{ {../graphs/} }
 
 
-\usepackage[left=2.5cm,right=3cm,
+\usepackage[left=2.5cm,right=2.5cm,
 top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 
 \title{ 	Self-similar actions of virtually abelian groups }
@@ -143,6 +143,8 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 	
 	\begin{center}\bf
 		{\LARGE
+			Самоподібні дії віртуально абелевих груп\\
+			\vskip0.5cm
 			Self-similar actions of virtually abelian groups 
 			\par}
 	\end{center}
@@ -176,7 +178,7 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 	\vskip0cm plus 1.5fill
 	\hangindent=7cm \hangafter=0 \noindent
 	Науковий Керівник:\\
-	Доцент кафедри, доктор фiзико-математичних наук\\
+	Доцент кафедри алгебри і комп'ютерної математики, доктор фiзико-математичних наук\\
 	{\bf Бондаренко Євген Володимирович}
 	
 	
@@ -201,19 +203,21 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 	
 	Self-similarity is a fascinating topic that arises in many areas of mathematics.  Self-similar actions of groups are closely related to fractals, which are objects that exhibit self-similarity at different scales. The study of self-similar actions of groups can also be seen as a special case of the theory of dynamical systems, where the group acts on a space and generates a self-similar structure.
 	
-	In this paper, we explore self-similar actions of groups via so-called virtual endomorphisms -- a convenient toolkit, that was highly developed by Nekrashevych. Specifically, we investigate free abelian groups, finitely generated abelian groups, and crystallographic groups. The choice is pretty straightforward since free abelian groups have a simple structure and as a result, they are the first, ones who arise at the very beginning of the studying. The next natural step is to extend the results to the finitely generated abelian groups since the only difference from free abelian is the existence of a finite part, i.e. "torsion". Finally, the great goal of this paper is to explore the self-similarity of crystallographic groups, which are again one step further into the complexity. 
+	Self-similar actions were studied for a wide range of groups, e.g. free abelian groups in \cite{Nekrashevych: 1/2-endomorphisms}, free groups in \cite{self-similar:free groups} and nilpotent groups in \cite{nilpotent_kernel} and \cite{Bond: nilpotent_groups}. Such interest is due to the fact that groups which admit finite-state self-similar action, i.e. \textit{automaton groups}, provide examples of finitely generated infinite torsion groups, that is the answer to the famous General Burnside Problem, given by Grigorchuk in \cite{Grygorchuk:original}. Futhermore, he also show that some of these groups also have intermediate growth \cite{Grygorchuk:growth}, a property strongly connected with Banach-Tarski paradox. 
 	
-	Crystallographic groups are crucial in studying crystals and have applications in materials science, physics, and chemistry. They seem to be simple, yet still remain mysterious in a significant number of problems. Usual example is the Klein bottle group $K$ with finite presentation $K=\langle a,b : aba=b\rangle$ which appears almost everywhere. Nevertheless, they are objects of the greatest importance due to their diverse practical applications, and hence are potential candidates for research. 
+	In this thesis, we explore self-similar actions of virtually abelian groups via \textit{virtual endomorphisms}---a convenient toolkit, that was developed by Nekrashevych in \cite{Nekrashevych:self-similar}. Specifically, we investigated free abelian groups, finitely generated abelian groups, and crystallographic groups. The choice is pretty straightforward since free abelian groups have a simple structure and as a result, they are the first who arise at the very beginning of the studying. The next natural step is to extend the results to the finitely generated abelian groups since the only difference from free abelian is the existence of a finite part, i.e. "torsion". Finally, the main topic of this thesis is to explore the self-similarity of crystallographic groups, which are again one step further into the complexity. 
+	
+	Crystallographic groups are crucial in studying crystals and have applications in materials science, physics, and chemistry. They seem to be simple, yet still remain mysterious in a significant number of problems. The Klein bottle group $K$ with finite presentation $K=\langle a,b : aba=b\rangle$ is an example of a crystallographic group that is also an automaton group, and was, among others, studied in \cite{Bond: classification_of_3state_automata_groups}. For this reason, natural questions arise: does every crystallographic group admit self-similar action? Does it admit self-replicating action? When this action is a finite-state action?
 	
 	The structure of this thesis is following. 
 	
 	\ref{section: theory} \textit{Theoretical Background and Related work} provides a reader with all the prerequisites needed to understand the main results.  
 		
-	\ref{section: main results} \textit{Main Results} contains all the scientific novelty this paper offers. Every family of groups is being investigated in a separate subsection, following the Scheme:
+	\ref{section: main results} \textit{Main Results} contains all the scientific novelty this thesis offers. Every family of groups is being investigated in a separate subsection, following the scheme:
 	
 	\begin{enumerate}[label=\arabic*.]
 		\item describe every subgroup of finite index $H < G$; 
-		\item describe every homomorphisms $\phi : H \rightarrow G$;
+		\item describe every homomorphism $\phi : H \rightarrow G$;
 		\item provide a criterion when $\phi$ is simple to guarantee faithfulness of the result self-similar action;
 		\item (optional) describe conjugacy classes of virtual endomorphisms $\phi: G \dashrightarrow G$;
 		\item (optional) describe subset of surjective virtual endomorphisms to have self-replicating action.
@@ -225,21 +229,21 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 	Namely, 
 	
 	\begin{enumerate}
-		\item for free abelian groups we give a detailed description of virtual endomorphisms, and criteria when they are simple and surjective in the Theorem \ref{theorem: self-similar free abelian}. We explore every virtual endomorphism, in contrast to the \cite{Nekrashevych:virtual_endomorphisms}, where the author's concern is only surjective ones; 
+		\item for free abelian groups we give a detailed description of virtual endomorphisms, and criteria when they are simple and surjective in Theorem \ref{theorem: self-similar free abelian}. We explore every virtual endomorphism, in contrast to the \cite{Nekrashevych:virtual_endomorphisms}, where the author's concern is only surjective ones; 
 		
-		\item for finitely generated abelian groups we also provide a characterization of virtual endomorphisms, although not so detailed one we still achieve the following results. Specifically, in the Theorem \ref{theorem: self-similar fintely generated} we prove that the simplicity of the virtual endomorphism of a free abelian group $G = \mathbb{Z}^n \oplus F$ does only depend on the simplicity of its components, which reduces the task to the free abelian case;  
+		\item for finitely generated abelian groups we also provide a characterization of virtual endomorphisms, although not so detailed one we still achieve the following results. Specifically, in Theorem \ref{theorem: self-similar fintely generated} we prove that the simplicity of the virtual endomorphism of a free abelian group $G = \mathbb{Z}^n \oplus F$ does only depend on the simplicity of its components, which reduces the task to the free abelian case;  
 		
-		\item for crystallographic group virtual endomorphisms are in fact conjugations in the affine group by the Bieberbach theorem. We established a criterion of the existence of self-replicating action for crystallographic groups. Particularly, in Theorem \ref{theorem: cryst criterion} we show that the virtual endomorphism of a crystallographic group is simple if and only if it is simple on pure translations, which is once again reducing the task to the free abelian groups. As a result, we proved that every crystallographic group admits a self-replicating action. 
+		\item for crystallographic group virtual endomorphisms are in fact conjugations in the affine group by the Bieberbach theorem. We established a criterion of the existence of self-replicating action for crystallographic groups. Particularly, in Theorem \ref{theorem: cryst criterion} we show that the virtual endomorphism of a crystallographic group is simple if and only if it is simple on pure translations, which is once again reducing the task to the free abelian groups. As a result, we proved that every crystallographic group admits a self-replicating action in Theorem \ref{theorem: self-replicating action for cryst}.
 	\end{enumerate}
 	\ref{section:experiments} \textit{Computational Experiments} comes up with the results of our algorithmic work for crystallographic groups. Since they have vast practical interest, it's pretty natural to focus on them during the lab work. We introduce our algorithm of generating self-replicating action of crystallographic groups, which is implemented in the mathematical environment \href{https://www.sagemath.org/}{Sagemath}. Using the developed tools we explore wallpaper groups and space groups for self-replicating actions of minimal alphabet, since the aforementioned scalar matrix mostly yields an action with big one. Some results have been attached in the Appendix. All the results along with the code one can found on the GitHub \href{https://github.com/davendiy/master_thesis}{repository}.
 	
 	%TODO: 
 	% - Rewrite proof of the Proposition 6
-	% - Split Proposition 7 into definition and proposition 
 	% - Add theory of System of Non-primitive Translations to the crystallographic section 
 	% - Recheck proof of Theorem 14 item 3
 	% - Remake Corollary 14.1
 	% - Recheck every theorem from the crystallographic section 
+	% - remove Bieberbach reference
 	% - \textbf{ADD SECTION COMPUTATIONAL EXPERIMENTS: }
 		
 	%	\begin{enumerate}
@@ -341,7 +345,7 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 	
 	\subsection{Self-similar action}
 	
-	Groups which admit self-similar action (and also called self-similar for this reason) are objects of a particular interest in the modern group theory since Grigorchuk's publication with solution to the famous Burnside's problem \cite{Grygorchuk:original}. Later in 1984, he also proved that the group from the original paper has so-called intermediate growth \cite{Grygorchuk:growth}, that is a property strongly connected with Banach-Tarski paradox. We review basic information about self-similar group actions (check \cite{Nekrashevych:self-similar} for more information).
+	Groups which admit self-similar action (and also called self-similar for this reason) are objects of a particular interest in the modern group theory since Grigorchuk's publication with solution to the famous General Burnside Problem \cite{Grygorchuk:original}. Later in 1984, he also proved that the group from the original paper has so-called intermediate growth \cite{Grygorchuk:growth}, that is a property strongly connected with Banach-Tarski paradox. We review basic information about self-similar group actions (check \cite{Nekrashevych:self-similar} for more information).
 	
 	
 	Let $X$ be a finite set (alphabet) and $X^{*}$ the set of all words (strings) over $X$, including the empty word $\epsilon$. The set $X^{*}$ with operation concatenation of words is a free monoid generated by $X$. The length of a word $v$ is denoted by $|v|$.
@@ -543,7 +547,7 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 		
 		% TODO: rewrite
 		
-		And vise versa, from $\phi(f) = h^{-1}\phi|_x(g^{-1}fg)h$ follows that $\phi$ is associated to the $(G, X)$.
+		And vise versa, from $\phi(f) = h^{-1}\phi_x(g^{-1}fg)h$ follows that $\phi$ is associated to the $(G, X)$.
 	\end{proof}
 	
 	
@@ -552,21 +556,18 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 	Consider a group $G$ and an arbitrary virtual endomorphism $\phi : G \dashrightarrow G$. Since $\Dom \phi < G$ we can consider left coset transversal $T = \{g_i \in G\}_{i = 1, \dots d}$ for $ \Dom \phi < G$, where $d = [G : \Dom \phi]$, such that $g_1 = e$ represents $\Dom \phi$ itself. 
 	
 	
-	% TODO: split into definition and proposition 
-	
-	\begin{proposition}
-		Consider an alphabet $X = \{x_i = g_i h_i\}_{i = 1 \dots d}$ given arbitrary sequence $C = \{h_i \in G\}_{i = 1 \dots d}$ with only condition $h_1 = e$. Then the associated self-similar action $(G, X)$ is transitive on the first level and is defined by the formula: 
+	\begin{definition}
+		Consider an alphabet $X = \{x_i = g_i h_i\}_{i = 1 \dots d}$ given arbitrary sequence $C = \{h_i \in G\}_{i = 1 \dots d}$ with only condition $h_1 = e$. Then the associated action $(G, X)$ is defined by the formula: 
 		\begin{equation}\label{eq:self-similar from virt}
 			g \cdot x_i = x_j \cdot h^{-1}_j \phi(g_j^{-1} g g_i) h_i	
 		\end{equation}
 		where $j$ is such that $g^{-1}_j g g_i \in \Dom \phi$.
-		
-	\end{proposition}
+	\end{definition}
 	
-	\begin{proof}
-		We need to prove that $(G, X)$ is indeed a self-similar action that is transitive on the first level, and $\phi$ is an associative virtual endomorphism. For $g \in \Dom \phi$ we obviously have $g \cdot x_1 = x_1 \cdot \phi(g)$ and thus $\phi = \phi_{x_1}$. If, however, given arbitrary $x_i, x_j \in X$, considering $g = g_j g_i^{-1}$ we obtain $g^{-1}_j g g_i \in \Dom \phi$ and (\ref{eq:self-similar from virt}) holds. 
-		
-	\end{proof}
+	
+	\begin{proposition}
+		$(G, X)$ from (\ref{eq:self-similar from virt}) is a transitive on the first level faithful self-similar action and $\phi$ is an associative virtual endomorphism if and only if $\phi$-core is trivial.
+	\end{proposition}
 	
 	\begin{corollary}
 		The associated virtual endomorphism determines the associated self-similar action uniquely up to a conjugacy.
@@ -644,7 +645,11 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 	\end{theorem}
 	
 	
-	Let $\Gamma$ be an arbitrary crystallographic group and $L \simeq \mathbb{Z}^n$ is the maximal abelian and normal subgroup of finite index, also known as a $\Gamma$'s \textit{lattice}, while $G = \Pi(\Gamma) =  \{A | A + t \in \Gamma\}$ is a \textit{point group}. Unfortunately, in most cases $\Gamma \neq G \ltimes L$ and thus every crystallographic group is specified via the triplet ($G, L, \alpha$), where $a$ denotes correspondence between matrices $g \in G$ and $t_g = \alpha(g) + L$ for every element $g + t_g \in \Gamma.$ 
+	Let $\Gamma$ be an arbitrary crystallographic group and $L \simeq \mathbb{Z}^n$ is the maximal abelian and normal subgroup of finite index, also known as a $\Gamma$'s \textit{lattice}, while $G = \Pi(\Gamma) =  \{A | A + t \in \Gamma\}$ is a \textit{point group}. Unfortunately, in most cases $\Gamma \neq G \ltimes L$ and thus every crystallographic group is specified via the triplet ($G, L, \alpha$), where $a$ denotes correspondence between matrices $g \in G$ and $t_g = \alpha(g) + L$ for every element $g + t_g \in \Gamma.$ This correspondence is often provided via System of Non-Primitive Translations or simply SNoT. 
+	
+	\begin{definition}
+		Let $\{g + t_g | g \in \Pi(\Gamma)\}$ be a transversal $\Gamma / L$. Then the set $\{t_g | g \in \Pi(\Gamma)\}$ of translation parts in this transversal is called a \textit{system of non-primitive translations} or \textit{translation vector system}.  
+	\end{definition}
 		
 	\begin{proposition}
 	
@@ -940,7 +945,7 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 		1. To prove this statement we will need several lemmas. 
 		
 		\begin{lemma}
-			There exists pair of matrices $(A_1, A_2)$ which defines a virtual endomorphism on the $\mathbb{Z}^n$ as in terms of the Theorem \ref{theorem: self-similar free abelian}.
+			There exists pair of matrices $(A_1, A_2)$ which defines a virtual endomorphism on the $\mathbb{Z}^n$ as in terms of Theorem \ref{theorem: self-similar free abelian}.
 		\end{lemma}
 		
 		\begin{proof}
@@ -1120,7 +1125,7 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 		$$
 		\phi(g) = a g a^{-1} \in \Gamma.
 		$$
-		From the Theorem \ref{theorem: cryst vs lattice} we know that the associative self-similar action is faithful if and only if the respective action on the lattice is faithful. For $g \in a^{-1}\Gamma a$  such that $g = id + t_g$ we have similarly to (\ref{eq: conjugation on translation}): 
+		From Theorem \ref{theorem: cryst vs lattice} we know that the associative self-similar action is faithful if and only if the respective action on the lattice is faithful. For $g \in a^{-1}\Gamma a$  such that $g = id + t_g$ we have similarly to (\ref{eq: conjugation on translation}): 
 		$$
 		\phi(g) = id + At_g
 		$$
@@ -1128,12 +1133,12 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 			 
 	\end{proof}
 
-	\begin{corollary} \label{cor: self-replicating action for cryst}
+	\begin{theorem} \label{theorem: self-replicating action for cryst}
 		Every crystallographic group $\Gamma$ admits a self-replicating action with $a=A+t$ being a scalar matrix $A$ with trivial translation.  
-	\end{corollary}
+	\end{theorem}
 
 	\begin{proof}
-		Since $A$ is scalar it obviously commutes with any matrix and thus lies in the normalizer of $\Pi(G)$. Recall that $G$ is given by a triplet $(G, L, \alpha)$, where $\alpha$ indicates the SNoT. To construct a self-replicating action, firstly we need to change the basis to the one that generates $L$. Particularly, having $L = \langle t_1, t_2, \dots t_n \rangle$ denote $\mathbf{L}$ as the matrix $[t_1, t_2, \dots t_n]$ and get new group $\Gamma' = \mathbf{L}^{-1}\Gamma\mathbf{L}$. By Bieberbach theorem $\Gamma' \sim \Gamma$, while $\Gamma' = (G', \mathbb{Z}^n, \alpha')$. From this follows, that the system of non-primitive translations consists of vectors with one or more rational coordinates. Hereafter assume we have $\Gamma = (G, \mathbb{Z}^n, \alpha)$.
+		Since $A$ is scalar it obviously commutes with any matrix and thus lies in the normalizer of $\Pi(G)$. Recall that $G$ is given by a triplet $(G, L, \alpha)$, where $\alpha$ indicates the SNoT. To construct a self-replicating action, firstly we need to change the basis to the one that generates $L$. Particularly, having $L = \langle t_1, t_2, \dots t_n \rangle$ denote  the matrix $[t_1, t_2, \dots t_n]$ as $\mathbf{L}$ and get new group $\Gamma' = \mathbf{L}^{-1}\Gamma\mathbf{L}$. By Bieberbach theorem $\Gamma' \sim \Gamma$, while $\Gamma' = (G', \mathbb{Z}^n, \alpha')$. From this follows, that the system of non-primitive translations consists of vectors with one or more rational coordinates. Hereafter assume we have $\Gamma = (G, \mathbb{Z}^n, \alpha)$.
 		
 		Consider $A = \dfrac{1}{m+1}E_n$ where $m = lcm \left(m_i : A_g + \dfrac{p}{m_i} \in \Gamma \right)$ is a least common multiplier of denominators of translations from the SNoT. Then $A$ has one eigenvalue $\lambda = \frac{1}{m}$ and the only thing we need to check is $a^{-1}\Gamma a \subset \Gamma$.
 		
@@ -1142,11 +1147,12 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 		\phi(g) = a^{-1} g a = B + A^{-1}t = B + (m+1)t
 		$$
 		$$
-		\Rightarrow \phi(g) = (B + t) + mt
+		\Rightarrow \phi(g) = g + mt
 		$$
 		where $mt \in \mathbb{Z}^n$, which leads to $\phi(g) \in \Gamma$.
 	\end{proof}
 	
+	% TODO: clarify
 	Combining this result with the results of Bondarenko I. we can formulate the following theorem
 	\begin{theorem}
 		A virtually abelian group $G$ admits a self-replicating action if and only if $G$ is crystallographic.
@@ -1158,7 +1164,7 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 	
 	In this section we describe algorithm for searching simple virtual endomorphisms and constructing faithful self-similar actions of crystallographic groups.  
 	
-	\subsection{Algorithm details} Due to the Theorem \ref{theorem: cryst criterion} we need to have a virtual endomorphism $\phi: \Gamma_1 \rightarrow \Gamma$ that is also an isomorphism. 
+	\subsection{Algorithm details} Due to Theorem \ref{theorem: cryst criterion} we need to have a virtual endomorphism $\phi: \Gamma_1 \rightarrow \Gamma$ that is also an isomorphism. 
 	For this purpose firstly we need to find the normalizer of the Point group in the $GL(n, \mathbb{Q})$. For crystallographic groups it is a common task to find a normalizer in $GL(n, \mathbb{Z})$, e.g. in \cite{cryst:international tables}, \cite{cryst:group_theory}. Moreover, Bilbao server \cite{cryts: online tool} can straightforwardly compute affine and euclidean normalizers for any space and wallpaper group. However, for our task it is not enough to have a normalizer in $GL(n, \mathbb{Z})$ and we need to extend it further.
 	
 	Consider any point group $G$. By definition, its normalizer $\mathcal{N}$ is the maximal subset of $GL(n, Q)$ that is 
@@ -1395,9 +1401,13 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 	\newpage
 	
 	\section{Discussion and further research}
-		In the end, there should be some words of conclusion and further work. First of all, we explored finitely generated abelian groups and gave a criterion of simplicity of virtual endomorphisms. Similarly, we provided an algorithmic criterion to examine virtual endomorphisms, that is crucial for highly practical nature of crystallography. Unfortunately, it should be noted, that the achieved result is far less than expected. Crystallographic groups didn't seem to admit a  self-replicating action, as they eventually appeared to. That being said, Corollary \ref{cor: self-replicating action for cryst} is simultaneously an interesting result and the greatest disappointment. 
+		In the end, there should be some words of conclusion and further work. First of all, we explored finitely generated abelian groups and gave a criterion of simplicity of virtual endomorphisms. Similarly, we provided an algorithmic criterion to examine virtual endomorphisms, that is crucial for highly practical nature of crystallography. Unfortunately, it should be noted, that the achieved result is far less than expected. Crystallographic groups didn't seem to admit a  self-replicating action, as they eventually appeared to. That being said, Theorem \ref{theorem: self-replicating action for cryst} is simultaneously an interesting result and the greatest disappointment. 
 		
-		To characterize every virtual endomorphism of any crystallographic group is too complex for the near future. Describe every self-replicating action of the minimal alphabet seems interesting, yet isn't as promising as it could be. On the other hand, it would be useful to have the explicit formula of self-replicating action of the minimal alphabet for any space group and wallpaper group. 
+		% todo: add question -- does every torsion-free crystallographic group admits self-replicating action on a binary alphabet 
+		
+		% todo: when a self-similar action is finite state
+		
+		To characterize every virtual endomorphism of any crystallographic group is too complex for the near future. Describe every self-replicating action of the minimal alphabet seems interesting, particularly: \textit{does every torsion-free crystallographic group admit self-replicating action on a binary alphabet}? Also, \textit{when a self-replicating action of a crystallographic group is finite state}. 
 		
 		For finitely generated abelian groups it would be interesting to extend the result of Theorem \ref{theorem: self-similar fintely generated} and give a constructive algorithm for checking simplicity of virtual endomorphisms of finite abelian groups.  
 		
@@ -1443,7 +1453,13 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 		\bibitem{nilpotent_kernel}
 		Adilson A. Berlatto, Said N. Sidki, Virtual endomorphisms of nilpotent groups. Groups Geom. Dyn. 1 (2007), no. 1, pp. 21–46, arXiv:math/0602131
 		
-				
+		
+		\bibitem{Bond: nilpotent_groups}
+		Bondarenko, I.V., Kravchenko, R.V. Finite-state self-similar actions of nilpotent groups. Geom Dedicata 163, 339–348 (2013). https://doi.org/10.1007/s10711-012-9752-y
+		
+		\bibitem{Bond: classification_of_3state_automata_groups}
+		Bondarenko, Ye.V. \& Grygorchuk, R.I. \& Kravchenko, Rostyslav \& Muntyan, Ye.V. \& Nekrashevych, Volodymyr \& Savchuk, Dmytro \& Shunych, Z.. (2007). On classification of groups generated by automaton with three states over alphabet of two letters, and on some questions concerned with such groups. Naukovyj Visnyk Chernivets’kogo Universytetu. Matematyka. 
+		
 		% ----------------------------crystallography------------------------------
 		\bibitem{Cryst_and_math}
 		FARKAS, DANIEL R. “CRYSTALLOGRAPHIC GROUPS AND THEIR MATHEMATICS.” The Rocky Mountain Journal of Mathematics, vol. 11, no. 4, 1981, pp. 511–51. JSTOR, http://www.jstor.org/stable/44236620. Accessed 4 Jun. 2022.
@@ -1780,6 +1796,7 @@ top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 		\label{tab:self-similar}
 	\end{table}
 	
+	% todo: add more clarification about tables. Add numbers of how much there exist different, etc.
 	Some remarks relating to the table \ref{tab:self-similar}: column "generators" skips the default translations (those are $\begin{pmatrix}1 \\ 0\end{pmatrix}$ and $\begin{pmatrix}0 \\ 1\end{pmatrix}$); zero translations along with unitary matrices are skipped as well; $|X|$ means the size of the alphabet that is the transversal of $\Gamma / \phi(\Gamma)$; exact form of the self-similar actions is found in every case, although most of them are huge and ugly.  
 	
 	Next tables contain normalizers for every point group in $\mathbb{R}^2$ and for some in $\mathbb{R}^3$. They were constructed in automatic way using the aforementioned algorithm. 

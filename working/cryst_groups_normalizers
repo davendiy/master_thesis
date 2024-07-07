@@ -3,21 +3,21 @@
 elements amount:  1
 
 -------------------------------normalizers--------------------------------------
-False
+All matrices
 
 ================================================================================
 2nd point group: Group([ [ [ -1, 0 ], [ 0, -1 ] ] ])
 elements amount 2:
 
 -------------------------------normalizers--------------------------------------
-False
+All matrices
 
 ================================================================================
 3d point group: Group([ [ [ -1, 0 ], [ 0, 1 ] ] ])
 elements amount: 2
 
 -------------------------------normalizers--------------------------------------
-normalizer     determinant       charpoly           Nekrashevych condition
+normalizer     determinant       charpoly
 [b, 0]             ab          (b - x)(a - x)
 [0, a]
 
@@ -32,11 +32,11 @@ normalizer     determinant       charpoly           Nekrashevych condition
 elements amount: 4
 
 -------------------------------normalizers--------------------------------------
-normalizer     determinant      charpoly           Nekrashevych condition
+normalizer     determinant      charpoly
 [a, 0]             ab        (a - x)(b - x)
 [0, b]
 
-[0, a]            -ab          x^2 - ab                       *                  <
+[0, a]            -ab          x^2 - ab
 [b, 0]
 
 [a, 0]              0
@@ -65,11 +65,11 @@ normalizer     determinant      charpoly           Nekrashevych condition
 elements amount: 4
 
 -------------------------------normalizers--------------------------------------
-normalizer     determinant       charpoly           Nekrashevych condition
-[a, -b]         a^2 + b^2     x^2 - 2*a*x + a^2 + b^2         *                  <
+normalizer     determinant       charpoly
+[a, -b]         a^2 + b^2     x^2 - 2*a*x + a^2 + b^2
 [b,  a]
 
-[-a, b]        -a^2 - b^2     x^2 - a^2 - b^2                 *                  <
+[-a, b]        -a^2 - b^2     x^2 - a^2 - b^2
 [ b, a]
 
 ================================================================================
@@ -78,20 +78,20 @@ normalizer     determinant       charpoly           Nekrashevych condition
 elements amount: 8
 
 -------------------------------normalizers--------------------------------------
-normalizer     determinant       charpoly           Nekrashevych condition
+normalizer     determinant       charpoly
 [a, 0]             a^2          (a - x)^2
 [0, a]
 
 [0, 0]             0
 [0, 0]
 
-[ 0, a]           a^2            x^2 + a^2                     *                 <
+[ 0, a]           a^2            x^2 + a^2
 [-a, 0]
 
-[ a, a]           2a^2      x^2 - 2*a*x + 2*a^2                *                 <
+[ a, a]           2a^2      x^2 - 2*a*x + 2*a^2
 [-a, a]
 
-[a, -a]           2a^2      x^2 - 2*a*x + 2*a^2                *                 <
+[a, -a]           2a^2      x^2 - 2*a*x + 2*a^2
 [a,  a]
 
 [-a, 0]           -a^2        (-a - x)(a - x)
@@ -114,11 +114,11 @@ normalizer     determinant       charpoly           Nekrashevych condition
 elements amount: 3
 
 -------------------------------normalizers--------------------------------------
-normalizer         determinant                charpoly    Nekrashevych condition
-[b - a,  -a]     a^2 - ab + b^2     x^2 + (a - 2*b)*x + a^2 - a*b + b^2    *     <
+normalizer         determinant                charpoly
+[b - a,  -a]     a^2 - ab + b^2     x^2 + (a - 2*b)*x + a^2 - a*b + b^2
 [   a,    b]
 
-[-a,  b - a]    -(a^2 - ab + b^2)       x^2 - a^2 + a*b - b^2              *     <
+[-a,  b - a]    -(a^2 - ab + b^2)       x^2 - a^2 + a*b - b^2
 [ b,    a  ]
 
 ================================================================================
@@ -126,17 +126,14 @@ normalizer         determinant                charpoly    Nekrashevych condition
 elements amount: 6
 
 -------------------------------normalizers--------------------------------------
-normalizer         determinant          charpoly      Nekrashevych condition
+normalizer         determinant          charpoly
 [a, 0]                a^2              (a - x)^2
 [0, a]
 
-[0, 0]                 0
-[0, 0]
-
-[ a, a]               a^2           x^2 - a*x + a^2              *               <
+[ a, a]               a^2           x^2 - a*x + a^2
 [-a, 0]
 
-[0, -a]               a^2           x^2 - a*x + a^2              *               <
+[0, -a]               a^2           x^2 - a*x + a^2
 [a,  a]
 
 [0, a]               -a^2              x^2 - a^2
@@ -156,9 +153,6 @@ elements amount: 6
 normalizer         determinant
 [a, 0]                a^2
 [0, a]
-
-[0, 0]                 0
-[0, 0]
 
 [ a, a]               a^2
 [-a, 0]
@@ -184,9 +178,6 @@ normalizer             determinant
 [-a + b, -a]          a^2 - ab + b^2
 [   a,    b]
 
-[0, 0]                      0
-[0, 0]
-
 [-a,  -a + b]        -(a^2 - ab + b^2)
 [ b,     a  ]
 
@@ -201,9 +192,6 @@ elements amount: 12
 normalizer                determinant
 [a, 0]                       a^2
 [0, a]
-
-[0, 0]                        0
-[0, 0]
 
 [ a, a]                      a^2
 [-a,  0]
