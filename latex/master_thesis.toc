@@ -10,9 +10,9 @@
 \contentsline {subsection}{\tocsubsection {}{3.1}{Self-similar actions of free abelian groups}}{10}{subsection.3.1}%
 \contentsline {subsection}{\tocsubsection {}{3.2}{Self-similar actions of finitely generated abelian groups}}{12}{subsection.3.2}%
 \contentsline {subsection}{\tocsubsection {}{3.3}{Self-replicating actions of crystallographic groups}}{15}{subsection.3.3}%
-\contentsline {section}{\tocsection {}{4}{Computational Experiments}}{18}{section.4}%
-\contentsline {subsection}{\tocsubsection {}{4.1}{Algorithm details}}{18}{subsection.4.1}%
-\contentsline {section}{\tocsection {}{5}{Discussion and further research}}{22}{section.5}%
-\contentsline {section}{\tocsection {}{}{References}}{23}{section*.3}%
-\contentsline {section}{\tocsection {}{6}{Appendix}}{24}{section.6}%
-\contentsline {subsection}{\tocsubsection {}{6.1}{Appendix A: Self-replicating actions of wallpaper groups}}{24}{table.1}%
+\contentsline {section}{\tocsection {}{4}{Computational Experiments}}{17}{section.4}%
+\contentsline {subsection}{\tocsubsection {}{4.1}{Algorithm details}}{17}{subsection.4.1}%
+\contentsline {section}{\tocsection {}{5}{Discussion and further research}}{21}{section.5}%
+\contentsline {section}{\tocsection {}{}{References}}{22}{section*.3}%
+\contentsline {section}{\tocsection {}{6}{Appendix}}{23}{section.6}%
+\contentsline {subsection}{\tocsubsection {}{6.1}{Appendix A: Self-replicating actions of wallpaper groups}}{23}{table.1}%
